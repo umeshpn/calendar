@@ -1,0 +1,2881 @@
+[temp]
+Year=1923
+Name=Kozhikode (<m>koozhikkooT</m>), Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Base]
+Year=2000
+Name=Greenwich
+Latitude=51.5
+Longitude=0.0
+Timezone=0.0
+DST=No
+StandardTimeZoneShortName=UT
+StandardTimeZoneLongName=Universal Time
+
+
+[Borneo]
+Year=2010
+Name=Borneo
+Latitude=0:0
+Longitude=114:0
+Timezone=8.0
+DST=No
+StandardTimeZoneShortName=UT
+StandardTimeZoneLongName=Universal Time
+
+# For 2016
+
+# India - No DST
+
+[Alappuzha2016]
+Year=2016
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Alwaye2016]
+Year=2016
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2016]
+Year=2016
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2016]
+Year=2016
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2016]
+Year=2016
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2016]
+Year=2016
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2016]
+Year=2016
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2016]
+Year=2016
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2016]
+Year=2016
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2016]
+Year=2016
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2016]
+Year=2016
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2016]
+Year=2016
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2016]
+Year=2016
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2016]
+Year=2016
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2016]
+Year=2016
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA - DST starts on 3/13, ends on 11/6
+
+[Annarbor2016]
+Year=2016
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Boston2016]
+Year=2016
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Cincinnati2016]
+Year=2016
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Columbus2016]
+Year=2016
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Cupertino2016]
+Year=2016
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Dallas2016]
+Year=2016
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[LosAngeles2016]
+Year=2016
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Naperville2016]
+Year=2016
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[NewYork2016]
+Year=2016
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Portland2016]
+Year=2016
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Seattle2016]
+Year=2016
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[SilverSpring2016]
+Year=2016
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+[Toronto2016]
+Year=2016
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2016/3/13
+DaylightEnd=2016/11/6
+
+
+# Other places - with DST
+
+[Hague2016]
+Year=2016
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2016/3/27
+DaylightEnd=2016/10/30
+
+[Heidelberg2016]
+Year=2016
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2016/3/27
+DaylightEnd=2016/10/30
+
+[Manchester2016]
+Year=2016
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2016/3/27
+DaylightEnd=2016/10/30
+
+[Martigny2016]
+Year=2016
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2016/3/27
+DaylightEnd=2016/10/30
+
+[Waimate2016]
+Year=2016
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2016/4/3
+DaylightStart=2016/9/25
+
+# Other places - no DST
+
+[Brunei2016]
+Year=2016
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2016]
+Year=2016
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2016]
+Year=2016
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2016]
+Year=2016
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2016]
+Year=2016
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2016]
+Year=2016
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+
+# For 2015
+
+# India - No DST
+
+[Alappuzha2015]
+Year=2015
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Alwaye2015]
+Year=2015
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2015]
+Year=2015
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2015]
+Year=2015
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2015]
+Year=2015
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2015]
+Year=2015
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2015]
+Year=2015
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2015]
+Year=2015
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2015]
+Year=2015
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2015]
+Year=2015
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2015]
+Year=2015
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2015]
+Year=2015
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2015]
+Year=2015
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2015]
+Year=2015
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2015]
+Year=2015
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA - DST starts on 3/8, ends on 11/1
+
+[Annarbor2015]
+Year=2015
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Boston2015]
+Year=2015
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Cincinnati2015]
+Year=2015
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Columbus2015]
+Year=2015
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Cupertino2015]
+Year=2015
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Dallas2015]
+Year=2015
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[LosAngeles2015]
+Year=2015
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Naperville2015]
+Year=2015
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[NewYork2015]
+Year=2015
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Portland2015]
+Year=2015
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Seattle2015]
+Year=2015
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[SilverSpring2015]
+Year=2015
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+[Toronto2015]
+Year=2015
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2015/3/8
+DaylightEnd=2015/11/1
+
+
+# Other places - with DST
+
+[Hague2015]
+Year=2015
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2015/3/29
+DaylightEnd=2015/10/25
+
+[Heidelberg2015]
+Year=2015
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2015/3/29
+DaylightEnd=2015/10/25
+
+[Manchester2015]
+Year=2015
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2015/3/29
+DaylightEnd=2015/10/25
+
+[Martigny2015]
+Year=2015
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2015/3/29
+DaylightEnd=2015/10/25
+
+[Waimate2015]
+Year=2015
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2015/4/5
+DaylightStart=2015/9/27
+
+# Other places - no DST
+
+[Brunei2015]
+Year=2015
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2015]
+Year=2015
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2015]
+Year=2015
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2015]
+Year=2015
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2015]
+Year=2015
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2015]
+Year=2015
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+
+# For 2014
+
+# India - No DST
+
+[Alappuzha2014]
+Year=2014
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Alwaye2014]
+Year=2014
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2014]
+Year=2014
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2014]
+Year=2014
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2014]
+Year=2014
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2014]
+Year=2014
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2014]
+Year=2014
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2014]
+Year=2014
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2014]
+Year=2014
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2014]
+Year=2014
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2014]
+Year=2014
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2014]
+Year=2014
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2014]
+Year=2014
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2014]
+Year=2014
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2014]
+Year=2014
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA - DST starts on 3/9, ends on 11/2
+
+[Annarbor2014]
+Year=2014
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Boston2014]
+Year=2014
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Cincinnati2014]
+Year=2014
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Columbus2014]
+Year=2014
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Cupertino2014]
+Year=2014
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Dallas2014]
+Year=2014
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[LosAngeles2014]
+Year=2014
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Naperville2014]
+Year=2014
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[NewYork2014]
+Year=2014
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Portland2014]
+Year=2014
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Seattle2014]
+Year=2014
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[SilverSpring2014]
+Year=2014
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+[Toronto2014]
+Year=2014
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2014/3/9
+DaylightEnd=2014/11/2
+
+
+# Other places - with DST
+
+[Hague2014]
+Year=2014
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2014/3/30
+DaylightEnd=2014/10/26
+
+[Heidelberg2014]
+Year=2014
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2014/3/30
+DaylightEnd=2014/10/26
+
+[Manchester2014]
+Year=2014
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2014/3/30
+DaylightEnd=2014/10/26
+
+[Martigny2014]
+Year=2014
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2014/3/30
+DaylightEnd=2014/10/26
+
+[Waimate2014]
+Year=2014
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2014/4/4
+DaylightStart=2014/9/26
+
+# Other places - no DST
+
+[Brunei2014]
+Year=2014
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2014]
+Year=2014
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2014]
+Year=2014
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2014]
+Year=2014
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2014]
+Year=2014
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2014]
+Year=2014
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+
+
+# For 2013
+
+# India - No DST
+
+[Alappuzha2013]
+Year=2013
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Alwaye2013]
+Year=2013
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2013]
+Year=2013
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2013]
+Year=2013
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2013]
+Year=2013
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2013]
+Year=2013
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2013]
+Year=2013
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2013]
+Year=2013
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2013]
+Year=2013
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2013]
+Year=2013
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2013]
+Year=2013
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2013]
+Year=2013
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2013]
+Year=2013
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2013]
+Year=2013
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2013]
+Year=2013
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA - DST starts on 3/10, ends on 11/3
+
+[Annarbor2013]
+Year=2013
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Boston2013]
+Year=2013
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Cincinnati2013]
+Year=2013
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Columbus2013]
+Year=2013
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Cupertino2013]
+Year=2013
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Dallas2013]
+Year=2013
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[LosAngeles2013]
+Year=2013
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Naperville2013]
+Year=2013
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[NewYork2013]
+Year=2013
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Portland2013]
+Year=2013
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Seattle2013]
+Year=2013
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[SilverSpring2013]
+Year=2013
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+[Toronto2013]
+Year=2013
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2013/3/10
+DaylightEnd=2013/11/3
+
+
+# Other places - with DST
+
+[Hague2013]
+Year=2013
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2013/3/31
+DaylightEnd=2013/10/27
+
+[Heidelberg2013]
+Year=2013
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2013/3/31
+DaylightEnd=2013/10/27
+
+[Manchester2013]
+Year=2013
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2013/3/31
+DaylightEnd=2013/10/27
+
+[Martigny2013]
+Year=2013
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2013/3/31
+DaylightEnd=2013/10/27
+
+[Waimate2013]
+Year=2013
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2013/4/7
+DaylightStart=2013/9/29
+
+# Other places - no DST
+
+[Brunei2013]
+Year=2013
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2013]
+Year=2013
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2013]
+Year=2013
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2013]
+Year=2013
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2013]
+Year=2013
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2013]
+Year=2013
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+
+# For 2012
+
+# India - No DST
+
+[Alappuzha2012]
+Year=2012
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+[Alwaye2012]
+Year=2012
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2012]
+Year=2012
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2012]
+Year=2012
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2012]
+Year=2012
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2012]
+Year=2012
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2012]
+Year=2012
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2012]
+Year=2012
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2012]
+Year=2012
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2012]
+Year=2012
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2012]
+Year=2012
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2012]
+Year=2012
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2012]
+Year=2012
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2012]
+Year=2012
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2012]
+Year=2012
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA - DST starts on 3/11, ends on 11/4
+
+[Annarbor2012]
+Year=2012
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Boston2012]
+Year=2012
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Cincinnati2012]
+Year=2012
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Columbus2012]
+Year=2012
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Cupertino2012]
+Year=2012
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Dallas2012]
+Year=2012
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[LosAngeles2012]
+Year=2012
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Naperville2012]
+Year=2012
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[NewYork2012]
+Year=2012
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Portland2012]
+Year=2012
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Seattle2012]
+Year=2012
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[SilverSpring2012]
+Year=2012
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+[Toronto2012]
+Year=2012
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2012/3/11
+DaylightEnd=2012/11/4
+
+
+# Other places - with DST
+
+[Hague2012]
+Year=2012
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2012/3/25
+DaylightEnd=2012/10/28
+
+[Heidelberg2012]
+Year=2012
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2012/3/25
+DaylightEnd=2012/10/28
+
+[Manchester2012]
+Year=2012
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2012/3/25
+DaylightEnd=2012/10/28
+
+[Martigny2012]
+Year=2012
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2012/3/25
+DaylightEnd=2012/10/28
+
+[Waimate2012]
+Year=2012
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2012/4/1
+DaylightStart=2012/9/30
+
+# Other places - no DST
+
+[Brunei2012]
+Year=2012
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2012]
+Year=2012
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2012]
+Year=2012
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2012]
+Year=2012
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2012]
+Year=2012
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2012]
+Year=2012
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+
+# 2011
+
+# India - No DST
+
+[Alappuzha2011]
+Year=2011
+Name=Alappuzha (<m>aalappuzha</m>), Kerala, India
+Latitude=9.5
+Longitude=-76.316667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Alwaye2011]
+Year=2011
+Name=Alwaye (<m>aaluvaa</m>), Kerala, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Bangalore2011]
+Year=2011
+Name=Bangalore, Karnataka, India
+Latitude=12.97
+Longitude=-77.56
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chengannur2011]
+Year=2011
+Name=Chengannur (<m>cen"n"annuuR</m>), Kerala, India
+Latitude=9.3166667
+Longitude=-76.666667
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Chennai2011]
+Year=2011
+Name=Chennai (<m>cennai</m>), Tamil Nadu, India
+Latitude=13.066666667
+Longitude=-80.283333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Hyderabad2011]
+Year=2011
+Name=Hyderabad (<m>haidaraabaad</m>), AP, India
+Latitude=17.3666666667
+Longitude=-78.43333333333333
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kannur2011]
+Year=2011
+Name=Kannur (<m>kaNNuuR</m>), Kerala, India
+Latitude=11.8666666
+Longitude=-75.4166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kottayam2011]
+Year=2011
+Name=Kottayam, Kerala, India
+Latitude=9.6
+Longitude=-76.567
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Kozhikode2011]
+Year=2011
+Name=Kozhikode, Kerala, India
+Latitude=11.25
+Longitude=-75.82
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[NewDelhi2011]
+Year=2011
+Name=New Delhi, India
+Latitude=28.6139
+Longitude=-77.2089
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Palakkadu2011]
+Year=2011
+Name=Palakkadu (<m>paalakkaaT</m>), Kerala, India
+Latitude=10.76666666667
+Longitude=-76.65
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Perin2011]
+Year=2011
+Name=Perinthalmanna (<m>perintalmaNNa</m>), Kerala, India
+Latitude=10.966666
+Longitude=-76.2166666
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Pune2011]
+Year=2011
+Name=Pune, Maharashtra, India
+Latitude=10.117
+Longitude=-76.4
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trichur2011]
+Year=2011
+Name=Thrissur, Kerala, India
+Latitude=10.50
+Longitude=-76.25
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+[Trivandrum2011]
+Year=2011
+Name=Thiruvananthapuram, Kerala, India
+Latitude=8.52
+Longitude=-77.0
+Timezone=5.5
+DST=No
+StandardTimeZoneShortName=IST
+StandardTimeZoneLongName=Indian Standard Time
+
+
+# USA: DST starts on 3/13, ends on 11/6
+
+[Annarbor2011]
+Year=2011
+Name=Ann Arbor, MI, USA
+Latitude=42.22
+Longitude=83.75
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Boston2011]
+Year=2011
+Name=Boston, MA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Cincinnati2011]
+Year=2011
+Name=Cincinnati, USA
+Latitude=39.13333
+Longitude=84.5
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Columbus2011]
+Year=2011
+Name=Columbus, OH, USA
+Latitude=40.0
+Longitude=83.1666666
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Cupertino2011]
+Year=2011
+Name=Cupertino, CA, USA
+Latitude=37.323
+Longitude=122.05272
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Dallas2011]
+Year=2011
+Name=Dallas, Texas, USA
+Latitude=32.767
+Longitude=96.767
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[LosAngeles2011]
+Year=2011
+Name=Los Angeles, California, USA
+Latitude=33.92
+Longitude=118.4
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Naperville2011]
+Year=2011
+Name=Naperville, Illinois, USA
+Latitude=41.80271
+Longitude=88.12948
+Timezone=-6.0
+DST=Yes
+StandardTimeZoneShortName=CST
+StandardTimeZoneLongName=Central Standard Time
+DaylightTimeZoneShortName=CDT
+DaylightTimeZoneLongName=Central Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[NewYork2011]
+Year=2011
+Name=New York, USA
+Latitude=40.78333333
+Longitude=73.9666666667
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Portland2011]
+Year=2011
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Seattle2011]
+Year=2011
+Name=Seattle, Washington, USA
+Latitude=47.6166666667
+Longitude=122.33333333
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[SilverSpring2011]
+Year=2011
+Name=Silver Spring, Maryland, USA
+Latitude=38.98
+Longitude=77.0
+Timezone=-5
+DST=Yes
+StandardTimeZoneShortName=EST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=EDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+[Toronto2011]
+Year=2011
+Name=Toronto, Ontario, Canada
+Latitude=43.683333
+Longitude=79.6333333
+Timezone=-5.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Eastern Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Eastern Daylight Time
+DaylightStart=2011/3/13
+DaylightEnd=2011/11/6
+
+# Other places - with DST
+
+[Hague2011]
+Year=2011
+Name=The Hague, Netherlands
+Latitude=52.0833333
+Longitude=-4.316666667
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2011/3/27
+DaylightEnd=2011/10/30
+
+[Heidelberg2011]
+Year=2011
+Name=Heidelberg, Germany
+Latitude=49.416666667
+Longitude=-8.7
+Timezone=1.0
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2011/3/27
+DaylightEnd=2011/10/30
+
+[Manchester2011]
+Year=2011
+Name=Manchester, England.
+Latitude=53.5
+Longitude=2.25
+Timezone=0
+DST=Yes
+StandardTimeZoneShortName=GMT
+StandardTimeZoneLongName=Greenwich Mean Time
+DaylightTimeZoneShortName=BST
+DaylightTimeZoneLongName=British Summer Time
+DaylightStart=2012/3/27
+DaylightEnd=2012/10/30
+
+[Martigny2011]
+Year=2011
+Name=Martigny, Switzerland.
+Latitude=46.10
+Longitude=-7.50
+Timezone=1
+DST=Yes
+StandardTimeZoneShortName=CET
+StandardTimeZoneLongName=Central European Time
+DaylightTimeZoneShortName=CEST
+DaylightTimeZoneLongName=Central European Summer Time
+DaylightStart=2011/3/27
+DaylightEnd=2011/10/30
+
+[Waimate2011]
+Year=2011
+Name=Waimate, New Zealand
+Latitude=-44.733333333
+Longitude=-171.03333333
+Timezone=12.0
+DST=Yes
+StandardTimeZoneShortName=GMT+12
+StandardTimeZoneLongName=New Zealand Standard Time
+DaylightTimeZoneShortName=GMT+13
+DaylightTimeZoneLongName=New Zealand Daylight Time
+DaylightEnd=2011/4/3
+DaylightStart=2011/9/25
+
+# Other places - no DST
+
+[Brunei2011]
+Year=2011
+Name=Kuala Belait, Brunei
+Latitude=4.98333333
+Longitude=-114.3
+Timezone=8
+DST=No
+StandardTimeZoneShortName=BNT
+StandardTimeZoneLongName=Brunei Darussalam Time
+
+[Dubai2011]
+Year=2011
+Name=Dubai (<m>dubaayi</m>), UAE
+Latitude=25.266666666666
+Longitude=-55.3333333333
+Timezone=4
+DST=No
+StandardTimeZoneShortName=UAET
+StandardTimeZoneLongName=UAE time
+
+[Jeddah2011]
+Year=2011
+Name=Jeddah, Saudi Arabia
+Latitude=21.86666666
+Longitude=-39.366666
+Timezone=3.0
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Saudi Standard Time
+
+[Pretoria2011]
+Year=2011
+Name=Garsfontein, Pretoria, South Africa
+Latitude=-25.8008
+Longitude=-28.2956
+Timezone=2
+DST=No
+StandardTimeZoneShortName=SAST
+StandardTimeZoneLongName=South African Standard Time
+
+[Singapore2011]
+Year=2011
+Name=Singapore, Singapore
+Latitude=1.233333333
+Longitude=-103.91666666
+Timezone=8
+DST=No
+StandardTimeZoneShortName=SST
+StandardTimeZoneLongName=Singapore Standard Time
+
+[Tokyo2011]
+Year=2011
+Name=<m>Tookkiyoo</m> (Tokyo), <m>jappaan.</m>
+Latitude=35.666666666
+Longitude=-139.75
+Timezone=9
+DST=No
+StandardTimeZoneShortName=JST
+StandardTimeZoneLongName=Japan Standard Time
+

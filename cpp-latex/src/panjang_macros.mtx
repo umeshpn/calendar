@@ -1,0 +1,126 @@
+%% -*- latex -*-
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{malayalam}
+
+\renewcommand{\tablename}{Table}
+\newcommand{\Date}{<m>tiiyati</m>}
+\newcommand{\WeekDay}{<m>aazhca</m>}
+\newcommand{\Day}{<m>dinaM</m>}
+\newcommand{\Nakshatram}{<m>nakSatraM</m>}
+\newcommand{\Thithi}{<m>tithi</m>}
+\newcommand{\Udayam}{<m>udayaM</m>}
+\newcommand{\Astamayam}{<m>astamayaM</m>}
+\newcommand{\Udayastamayam}{<m>udayaastamayaM</m>}
+\newcommand{\Rahukalam}{<m>raahukaalaM</m>}
+\newcommand{\Gulikakalam}{<m>guLikakaalaM</m>}
+\newcommand{\Yamakantakakalam}{<m>yamakaNTakakaalaM</m>}
+\newcommand{\Madhyahnam}{<m>maddhyaahnaM</m>}
+\newcommand{\Varam}{<m>aazhca</m>}
+\newcommand{\Grahasthiti}{<m>grahasthiti</m>}
+\newcommand{\Navaamsham}{<m>navaamshaM</m>}
+\newcommand{\Lagnam}{<m>lagnaM</m>}
+\newcommand{\Dashamam}{<m>dashamaM</m>}
+
+\newcommand{\StarA}{<m>ashvati</m>}
+\newcommand{\StarB}{<m>bharaNi</m>}
+\newcommand{\StarC}{<m>kaaRttika</m>}
+\newcommand{\StarD}{<m>roohiNi</m>}
+\newcommand{\StarE}{<m>makayiraM</m>}
+\newcommand{\StarF}{<m>tiruvaatira</m>}
+\newcommand{\StarG}{<m>puNaRtaM</m>}
+\newcommand{\StarH}{<m>puuyaM</m>}
+\newcommand{\StarI}{<m>aayilyaM</m>}
+\newcommand{\StarJ}{<m>makaM</m>}
+\newcommand{\StarK}{<m>puuraM</m>}
+\newcommand{\StarL}{<m>utraM</m>}
+\newcommand{\StarM}{<m>attaM</m>}
+\newcommand{\StarN}{<m>cittira</m>}
+\newcommand{\StarO}{<m>cooti</m>}
+\newcommand{\StarP}{<m>vishaakhaM</m>}
+\newcommand{\StarQ}{<m>anizhaM</m>}
+\newcommand{\StarR}{<m>t.rkkeeTTa</m>}
+\newcommand{\StarS}{<m>muulaM</m>}
+\newcommand{\StarT}{<m>puuraaTaM</m>}
+\newcommand{\StarU}{<m>utraaTaM</m>}
+\newcommand{\StarV}{<m>tiruvooNaM</m>}
+\newcommand{\StarW}{<m>aviTTaM</m>}
+\newcommand{\StarX}{<m>catayaM</m>}
+\newcommand{\StarY}{<m>puururuTTaati</m>}
+\newcommand{\StarZ}{<m>utt.rTTaati</m>}
+\newcommand{\Stara}{<m>reevati</m>}
+
+\newcommand{\Krishnapaksham}{$\blacktriangledown$}
+\newcommand{\Shuklapaksham}{$\vartriangle$}
+%% \newcommand{\Krishnapaksham}{}
+%% \newcommand{\Shuklapaksham}{}
+\newcommand{\ThithiA}{$\bullet$ <m>amaavaasi</m>}
+\newcommand{\ThithiB}{\Shuklapaksham{} <m>prathama</m>}
+\newcommand{\ThithiC}{\Shuklapaksham{} <m>dvitiiya</m>}
+\newcommand{\ThithiD}{\Shuklapaksham{} <m>t.rtiiya</m>}
+\newcommand{\ThithiE}{\Shuklapaksham{} <m>catuRtthi</m>}
+\newcommand{\ThithiF}{\Shuklapaksham{} <m>pan~cami</m>}
+\newcommand{\ThithiG}{\Shuklapaksham{} <m>SaSThi</m>}
+\newcommand{\ThithiH}{\Shuklapaksham{} <m>saptami</m>}
+\newcommand{\ThithiI}{\Shuklapaksham{} <m>aSTami</m>}
+\newcommand{\ThithiJ}{\Shuklapaksham{} <m>navami</m>}
+\newcommand{\ThithiK}{\Shuklapaksham{} <m>dashami</m>}
+\newcommand{\ThithiL}{\Shuklapaksham{} <m>eekaadashi</m>}
+\newcommand{\ThithiM}{\Shuklapaksham{} <m>dvaadashi</m>}
+\newcommand{\ThithiN}{\Shuklapaksham{} <m>trayoodashi</m>}
+\newcommand{\ThithiO}{\Shuklapaksham{} <m>catuRddashi</m>}
+
+\newcommand{\ThithiP}{$\circ$ <m>pauRNNami</m>}
+\newcommand{\ThithiQ}{\Krishnapaksham{} <m>prathama</m>}
+\newcommand{\ThithiR}{\Krishnapaksham{} <m>dvitiiya</m>}
+\newcommand{\ThithiS}{\Krishnapaksham{} <m>t.rtiiya</m>}
+\newcommand{\ThithiT}{\Krishnapaksham{} <m>catuRtthi</m>}
+\newcommand{\ThithiU}{\Krishnapaksham{} <m>pan~cami</m>}
+\newcommand{\ThithiV}{\Krishnapaksham{} <m>SaSThi</m>}
+\newcommand{\ThithiW}{\Krishnapaksham{} <m>saptami</m>}
+\newcommand{\ThithiX}{\Krishnapaksham{} <m>aSTami</m>}
+\newcommand{\ThithiY}{\Krishnapaksham{} <m>navami</m>}
+\newcommand{\ThithiZ}{\Krishnapaksham{} <m>dashami</m>}
+\newcommand{\Thithia}{\Krishnapaksham{} <m>eekaadashi</m>}
+\newcommand{\Thithib}{\Krishnapaksham{} <m>dvaadashi</m>}
+\newcommand{\Thithic}{\Krishnapaksham{} <m>trayoodashi</m>}
+\newcommand{\Thithid}{\Krishnapaksham{} <m>catuRddashi</m>}
+
+\newcommand{\Sun}{<m>ravi</m>}
+\newcommand{\Moon}{<m>candran</m>}
+\newcommand{\Mars}{<m>kujan</m>}
+\newcommand{\Mercury}{<m>budhan</m>}
+\newcommand{\Jupiter}{<m>guru</m>}
+\newcommand{\Venus}{<m>shukran</m>}
+\newcommand{\Saturn}{<m>shani</m>}
+\newcommand{\Rahu}{<m>raahu</m>}
+\newcommand{\Ketu}{<m>keetu</m>}
+\newcommand{\Uranus}{<m>yuRaanas</m>}
+\newcommand{\Neptune}{<m>nepTyuuN</m>}
+\newcommand{\Pluto}{<m>pluuTTo</m>}
+
+\newcommand{\RasiA}{<m>meeTaM</m>}
+\newcommand{\RasiB}{<m>iTavaM</m>}
+\newcommand{\RasiC}{<m>mithunaM</m>}
+\newcommand{\RasiD}{<m>kaRkkaTakaM</m>}
+\newcommand{\RasiE}{<m>cin"n"aM</m>}
+\newcommand{\RasiF}{<m>kanni</m>}
+\newcommand{\RasiG}{<m>tulaaM</m>}
+\newcommand{\RasiH}{<m>v.rshcikaM</m>}
+\newcommand{\RasiI}{<m>dhanu</m>}
+\newcommand{\RasiJ}{<m>makaraM</m>}
+\newcommand{\RasiK}{<m>kuMbhaM</m>}
+\newcommand{\RasiL}{<m>miinaM</m>}
+
+\setlength{\oddsidemargin}{0.2cm}
+\setlength{\evensidemargin}{0.2cm}
+
+\newcommand{\PageRange}[2]{\pageref{#1} <m>mutal </m>
+  \pageref{#2} <m>vareyuLLa peejukaLil</m>}
+
+\newcommand{\DegMin}[2]{{\ensuremath{#1^\circ~#2'}}}
+\newcommand{\Deg}[1]{{\ensuremath{#1^\circ}}}
+
+%%\newcommand{\PageRange}[2]{}
+
+\newcommand{\SecRef}[1]{~(\S{}\ref{#1})~}

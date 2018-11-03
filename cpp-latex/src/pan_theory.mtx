@@ -1,0 +1,16 @@
+%% -*- latex -*-
+
+\documentclass{article}
+\begin{document}
+\section{ayanamsam}
+Lahiri {\em ayanamsam} ({\dn ayanaamSam}) is computed as
+follows:
+
+\begin{align*}
+  \text{{\em ayanamsam}} &= (0.00024 c^2 + 50.2786 c + 85901.4490) / 3600 \\
+    &= 23^\circ 51' 41" + 0.013966277 c + 6.67 \times
+    10^{-8} c^2 \\
+ \end{align*} 
+  where c = Julian centuries since 2000 January 1 noon UT.
+
+\end{document}

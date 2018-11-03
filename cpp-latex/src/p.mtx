@@ -1,0 +1,59 @@
+%% -*- latex -*-
+\documentclass{book}
+%% Make chapter headings skip less vertical space
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{20\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries \@chapapp\space \thechapter
+        \par\nobreak
+        \vskip 15\p@
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 40\p@
+  }}
+
+\def\@makeschapterhead#1{%
+  \vspace*{20\p@}%
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \Huge \bfseries  #1\par\nobreak
+    \vskip 15\p@
+  }}
+\makeatother
+\usepackage{multirow}
+\title{<m>keeraLapan~caaMgaM</m>}
+\author{<m>umeeS pi. en.</m>}
+\date{}
+\include{panjang_macros}
+\setlength{\tabcolsep}{1mm}
+\renewcommand{\chaptername}{<m>addhyaayaM</m>}
+\setlength{\parindent}{0pt}
+\begin{document}
+\thispagestyle{empty}
+
+\label{sec:p1Start}
+\include{p1}
+\label{sec:p1End}
+\cleardoublepage
+\label{sec:p2Start}
+\include{p2}
+\label{sec:p2End}
+\clearpage
+\label{sec:p3Start}
+\include{p3}
+\label{sec:p3End}
+\cleardoublepage
+\label{sec:p4Start}
+\include{p4}
+\label{sec:p4End}
+%% \cleardoublepage
+%% \label{sec:det}
+%% \include{panjang_det}
+
+\bibliography{p}
+\bibliographystyle{unsrt}
+\end{document}

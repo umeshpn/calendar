@@ -1,0 +1,674 @@
+%% -*- latex -*-
+
+%% \chapter{<m>vishadavivaran"n"aL</m>}
+
+\section{<m>jyootishshaastraniR{}vvacanan"n"aL</m>}
+
+\subsection{<m>grahasphuTaM</m> (geocentric longitude)}
+\label{sec:grahasphutam}
+  <m>prapan~cattile oru sthiradishayil
+  ninnuM suuRyapathatte
+  bhuumi keendramaaya oru v.rttamaayi parigaNicc, oru
+  grahattinRe sthaanaM niRNNayikkunna aaMgiLi</m> (angle)
+  <m>ne aa grahattinRe aa samayattinuLLa {\bf \em sphuTaM} ennu
+  paRayunnu.</m>\FootNote{<m>aadhunikariitiyanusaricc grahasphuTaM </m>$0$<m>{} mutal </m>$360$<m>{}
+  vareyuLLa DigrikaLaayi suucippikkunnu.  ooroo DigriyeyuM </m>$60$<m>{}
+  miniRRukaLaayuM ooroo miniRRineyuM </m>$60$<m>{} 
+  sekkanRukaLaayuM vibhajiccirikkunnu.  ii kalaNTaRil oru
+  miniTTil kuRan~n~a k.rtyata ceeRttiTTilla.</m>}
+
+  <m>ii~~ ``sthiradisha''yeppaRRi
+  paashcaatyaR{}kkuM bhaaratiiyaR{}kkuM tammil
+  abhipraayabhinnatayuNT. paashcaatyaR  {\bf\em
+  saayanasphuTa}vuM bhaaratiiyaR {\bf\em nirayanasphuTa}vuM
+  upayoogikkunnu. </m>
+
+\subsection{<m>saayanaphuTaM</m>}
+
+  First Point of
+  Aries<m>-ne</m> $0^{\circ}${} <m>aayi kaNakkaakki
+  kaNTupiTikkunna sphuTatte {\bf\em
+  saayanasphuTam} ennu paRayunnu.  </m> First Point of
+  Aries <m>vyaktamaayi niR{}vvacicciTTuLLa oru
+  dishayaayatukoNT saayanasphuTatte saMbandhicc
+  abhipraayavyatyaasan"n"aLilla.  lookattu palayiTattu
+  ninnuM prasiddhiikarikkunna </m> ephermeris<m>-kaLil
+  saayanasphuTamaaNu koTuttiTTuLLat.
+
+  ii pan~caaMgaM niRmmikkunnatinaayi
+  saayanagrahasphuTan"n"aL kaNTupiTikkaan</m> \cite{Meuss1991},
+  \cite{Duffet1992} <m>ennii
+  granthan"n"aLiluLLa </m>algorithms
+  <m>upayoogiccirikkunnu.</m>
+
+
+\subsection{<m>ayanaaMshaM</m>}
+  First point of Aries <m>oru calikkunna dishayaaN<<+.
+  bhaaratiiyajyootishshaastrajn~aR oru {\em sthiradisha}ye
+  avalaMbikkaNaM ennu niRbbandhamuLLavaraaN<<+.
+  niRbhaagyavashaal, ellaaM caliccukoNTirikkunna prapan~cattil
+  oru sthiradisha kaNTupiTikkuka eLuppamalla.
+  nuuRRaaNTukaLkku mumpuLLavaR nakSatran"n"aL sthiramaaNenn
+  (teRRaayi) vishvasicc avaye avalaMbicc~~``sthiradishakaL''
+  niR{}vvaciccu.  kaalakramattil ii nakSatran"n"aLkku
+  sthaanacalanaM saMbhaviccappooL vibhinnanakSatran"n"aLe
+  avalaMbiccuLLa gaNitakriyakaLkku vyatyaasamuNTaayi.  atinaal
+  pala ayanaaMshan"n"aL innu pracaarattiluNT.
+  
+  bhaaratasaR{}kkaaR aMgiikaricciTTuLLatuM </m>N. C. <m>laahiri
+  munnooTTuveccatumaaya niR{}vvacanatte</m>\FootNote{<m>itanusaricc
+  cittiranakSatraM kaaNunna dishaye </m>$180^\circ${} <m>aayi
+  kaNakkaakkunnu. 2000-ttinRe tuTakkattiluLLa ayanaaMshaM
+  itanusaricc </m> $ 23^\circ 51' 41"$ <m>aaN<<+.  </m>
+  $22^\circ 24' 11"$ (B.V. <m>raaman </m>), $24^\circ 44'
+  11"$ (Fagan/Bradley), $20^\circ 3' 26"$
+  (Usha-Shashi),$23^\circ 45' 6"$ (krishnamurthy), $23^\circ
+  28' 34"$ (Devadatta) <m> ennin"n"ane pala abhipraayan"n"aLumuNT.</m>}\cite{Lahiri}<m> avalaMbiccaaN<<+ ii pan~caaMgattil
+  ayanaaMshaM kaNTupiTiccirikkunnat.  ayanaaMshaM
+  kaNTupiTikkaan 
+  cuvaTecceeRttirikkunna </m> formula\FootNote{<m>laahiriyuTe
+    paTTikayil ninn</m> Least square curve fitting
+    <m>upayoogicc uNTaakkiyataaN<<+ it.</m>}
+  <m>upayoogiccirikkunnu:</m>
+  \begin{align*}
+    \text{{\bf <m>ayanaaMshaM</m>}} &= (0.00024\,c^2 + 50.2786\,c + 85901.4490) / 3600 \\
+    &= 23^\circ 51' 41" + 0.013966277 c + 6.67 \times
+    10^{-8} c^2 \\
+  \end{align*} 
+  where c = Julian centuries since 2000 January 1 noon UT.
+  \subsection{<m>nirayana sphuTaM</m>}
+  <m>
+  saayanasphuTattilninn ayanaamshaM kuRacc nirayanasphuTaM
+  kaNTupiTiccirikkunnu.  ii pan~caaMgattile ella
+  sphuTan"n"aLuM nirayanasphuTan"n"aLaaN<<+.
+  
+%%   ooroo divasattinReyuM tuTakkattiluLLa (praadeeshika
+%%   sRRaanDaaRD samayaM) nirayanagrahasphuTan"n"aL
+%%   </m>
+%%   \PageRange{sec:p2Start}{sec:p3End}
+%%   <m>{} koTuttirikkunnu.
+  
+  grahasphuTan"n"aLe Digri/miniTT/sekkanRukaLaayi
+  suucippikkaamen"kiluM, bhaaratiiyaR maRRu pala riitiyilumaaN<<+ saadhaaraNayaayi
+  avaye kaaNikkaaRuLLat. ava taazhecceeR{}kkunnu</m>
+\iffalse
+  \begin{enumerate}
+    \item <m>raashiyuM navaaMshavuM</m> \SecRef{sec:RasiNavamsam}
+    \item <m>raashiyuM shiSTasphuTavuM</m>  \SecRef{sec:RasiShishtaSphutam}
+    \item <m>nakSatravuM paadavuM</m> \SecRef{sec:NakshatraPadam}
+  \end{enumerate}
+\fi
+  
+\subsection{<m>raashiyuM navaaMshavuM</m>} 
+\label{sec:RasiNavamsam}
+   <m>raashicakratte
+    </m>($360^\circ$) $30^\circ${} <m>viitamuLLa</m> $12${}
+    <m>raashikaLaayuM avayilooroonnineyuM
+    </m>$3^\circ~20'$<m> viitamuLLa </m>$9$<m>{} navaaMshan"n"aLaayuM
+    vibhajiccirikkunnu.  in"n"ane raashiyuM
+    navaaMshavumaayi</m> $3^\circ~20'$<m>-nRe k.rtyatayil
+    grahasphuTatte suucippikkaanaavuM.  ooroo raashikkuM
+    meeTam, iTavaM tuTan"n"iya peerukaLiTTu viLikkunnu.
+    navaaMshakaM suucippikkaanuM ii raashikaLuTe peerukaL tanne upayoogikkunnu.</m>
+    
+\subsection{<m>raashiyuM shiSTasphuTavuM</m>}
+\label{sec:RasiShishtaSphutam}
+<m>
+sphuTatte raashiyuM (sphuTaM / 30) shiSTasphuTavuM (sphuTaM
+</m> {\tt mod} <m> 30) aayi suucippikkaaRuNT.  ii pan~caaMgattil
+grahasphuTan"n"aL kaaNiccirikkunnat ii vidhattilaaN<<+.
+</m>
+  
+\subsection{<m>nakSatravuM paadavuM</m>} 
+\label{sec:NakshatraPadam}
+<m>raashicakratte
+    </m>$13^\circ~20'${} <m>viitamuLLa </m>
+    $27${} <m>nakSatran"n"aLaayuM avayilooroonnineyuM
+    </m>$3^\circ~20'$<m> viitamuLLa </m>$4$<m>{} paadan"n"aLaayuM
+    vibhajiccirikkunnu.</m>%
+\iffalse
+\FootNote{<m>{\bf\em
+    vaTeeshvarasiddhaanta}prakaaraM nakSatran"n"aL pala
+    valippamuLLvayaayi kaNakkaakkunna riitiyumuNT.
+    keeraLattil potuvee an"n"ane ceyyaaRilla.</m>}
+\fi
+ <m> nakSatran"n"aLkk ashvati, bharaNi
+    tuTan"n"iya nakSatran"n"aLuTe peeriTTuM 
+    paadan"n"aLe 1, 2, 3, 4 ennii saMkhyakaLaaluM
+    suucippikkunnu.  
+    
+    ooroo nakSatrapaadavuM oru navaaMshattinu tulyamaaN<<+.</m>
+    
+  <m>
+  meelppaRan~n~a aLavukaL</m> Table~\ref{tab:raaSinakSatramOne},
+  Table~\ref{tab:raaSinakSatramTwo}, Table~\ref{tab:raaSinakSatramThree} <m>ennii
+  paTTikakaLil koTuttirikkunnu.
+  </m>
+  
+  \input{rasi_nak}
+
+  <m>
+  ellaa khagooLan"n"aLkkuTeyuM sphuTaM nakSatraM koNTu
+  vyavaharikkaamen"kiluM</m>\FootNote{<m>udaaharaNattin<<+
+  suuRyasphuTaM nakSatramaayi suucippikkunnatine {\bf\em
+  n~aaRRuveela} ennu paRayunnu.</m>},<m> saadhaaraNayaayi candrasphuTamaaNu
+  {\bf\em nakSatraM} ennatukoNTu
+  uddeeshikkunnat.
+
+%%   ooroo divasattileyuM caandranakSatran"n"aL 
+%%   </m>
+%% \PageRange{sec:p1Start}{sec:p1End}
+%% <m>{}
+%%   koTuttirikkunnu.  nakSatraM oru divasattiniTaykku maaRunna
+%%   divasan"n"aLil (ivayaaN<<+ adhikavuM) aa raNTu
+%%   nakSatran"n"aLuM maaRunna samayavuM (praadeeshika
+%%   sRRaanDaaRD samayaM) koTuttirikkunnu.
+%%   suuRyoodayasamayatte nakSatraM {\bf\em pratyeeka lipiyil} suucippiccirikkunnu.
+
+  saadhaaraNayaayi oru divasattil raNTu
+  nakSatran"n"aLaaNuLLaten"kiluM, muunnu nakSatran"n"aLuLLa
+  divasan"n"aLuM (aRddharaatriykku toTTu sheeSaM oru
+  nakSatraM tuTan"n"i aTutta aRddharaatriykku toTTu mumpu
+  avasaanikkumpooL), oru nakSatraM maatramuLLa
+  divasan"n"aLuM (oru nakSatraM aRddharaatriykku toTTu mumpu
+  tuTan"n"i aRddharaatriykku toTTu sheeSaM avasaanikkumpooL)
+  uNTaakaaM.</m>\FootNote{<m>sharaashari 27.3217 divasaM
+  koNTaaNu candran bhuumikku cuRRuM oru tavaNa
+  valaMveykkunnat.  ii kaalayaLavine 27 nakSatran"n"aLaayi
+  vibhajiccirikkunnatinaal oru nakSatrattinRe sharaashari
+  daiRghyaM </m> $27.3217/27 = 1.01191$ <m> divasamaaN<<+ (oru
+  divasaM 17 miniTT).  atu koNTaaN<<+ oru divasattil oru
+  nakSatraM enna kaNakkinu saMbhavikkunnat.  en"kiluM,
+  candrapathaM diiRghav.rttamaakayaal nakSatradaiRghyattil
+  eeRRakkuRaccilukaL uNTaakaaM.</m>} <m>muunnu nakSatran"n"aLuLLa divasan"n"aLe raNTu
+  variyilaayuM, oru nakSatraM maatramuLLa divasan"n"aLe aa
+  nakSatraM maatraM (samayaM kuuTaate) kaaNiccuM
+  reekhappeTuttiyirikkunnu.
+
+
+  </m>
+
+\subsection{<m>vaaraM (aazhca)</m>}
+<m>
+pratyeekicc oru jyootishshaastraniR{}vvacanamillaate
+kaalatte eezhu divasan"n"aLuTe kuuTTamaayi parigaNiccatile
+ooroonnineyuM {\bf\em vaaraM (aazhca)} ennu viLikkunnu.  oru
+aazhcayile eezhu divasan"n"aLe yathaakramaM suuRyan,
+candran, covva, budhan, vyaazhaM, shukran, shani ennii
+grahan"n"aLuTe peeriTTu viLikkunnu.
+
+bhaaratiiyaruTe divasaM suuRyoodayaM mutal suuRyoodayaM
+vareyaayatukoNT aazhcayuM an"n"anetanne kaNakkaakkunnu.
+udaaharaNattin<<+ oru tin"kaLaazhca </m>6 A.M. <m>nu suuRyan udikkunnen"kil
+</m>5 A.M. <m> n~aayaRaazhcayaayi karutunnu.
+</m>
+
+\subsection{<m>tithi</m>(Phase of moon)<m>yuM karaNavuM</m>}
+\label{sec:Thithikaranam}
+<m>
+  suuRyacandranmaaruTe sphuTan"n"aL tammiluLLa vyatyaasatte
+  suucippikkaanuLLa oru riitiyaaNu tithi.  ii vyatyaasaM
+  (ataayat, candrasphuTattil ninnu suuRyasphuTaM kuRacca muulyam; it</m>{} $0^\circ$<m> mutal
+  </m>$360^\circ$<m> vare eetu muulyavumaakaaM)
+  </m>$12^\circ${} <m> viitamuLLa</m>{} $30${} <m>
+  samabhaagan"n"aLaayi vibhajiccatile ooroo bhaagatteyuM
+  {\bf\em tithi} ennu viLikkunnu.  itilttanne aadyatte
+  </m>$15$~<m> bhaagan"n"aLe {\bf\em veLutta pakSaM} ennum,
+  pinniiTuLLa </m>$15$<m>~bhaagan"n"aLe {\bf\em kaRutta pakSaM}
+  ennum, ivayil ooroonnilumuLLa </m>$15$<m>{} 
+  bhaagan"n"aLilooroonnineyuM {\bf\em prathama} mutaluLLa
+  tithikaLuTe peeru koNTuM vyavaharikkunnu.
+
+  ooroo tithiyuTeyuM aadyatteyuM raNTaamatteyuM
+  pakutikaLe {\bf\em karaNaM} ennu viLikkunnu.  patinonnu
+  karaNan"n"aL 30 tithyaRddhan"n"aLiluM aavaRtticcu varunnu.
+
+  tithikaLuM avayuTe sphuTan"n"aLuM karaNan"n"aLuM</m>
+  \cite{Panickar} Table~\ref{tab:thithis}-<m>l koTuttirikkunnu.</m>
+
+\begin{table}
+\centering
+\input{thithis}
+\caption{<m>tithikaL</m>}
+\label{tab:thithis}
+\end{table}
+
+  <m>
+  saadhaaraNayaayi oru divasattil raNTu
+  tithikaLaaNuLLaten"kiluM, muunnu tithikaLuLLa
+  divasan"n"aLuM (aRddharaatriykku toTTu sheeSaM oru
+  tithi tuTan"n"i aTutta aRddharaatriykku toTTu mumpu
+  avasaanikkumpooL), oru tithi maatramuLLa
+  divasan"n"aLuM (oru tithi aRddharaatriykku toTTu mumpu
+  tuTan"n"i aRddharaatriykku toTTu sheeSaM avasaanikkumpooL)
+  uNTaakaaM.</m>\FootNote{<m>sharaashari 27.3217 divasaM
+  koNTu candranuM 365.242191 divasaM koNTu suuRyanuM bhuumikku cuRRuM oru tavaNa
+  valaMveykkunnu.  atinaal, </m>
+  $\frac{1}{\frac{1}{27.3217} - \frac{1}{365.242191}} =
+  29.5307$<m> divasam koNT (29 divasaM 12 maNikkuuR 44
+  miniTT) oru tithicakraM puuRttiyaakunnu.  ii kaalayaLavine 30 tithikaLaayi
+  vibhajiccirikkunnatinaal oru tithiyuTe sharaashari
+  daiRghyaM </m> $29.5307 / 30 = 0.9844${} <m>divasamaaN<<+
+  (23 maNikkuuR 37 miniTT).  atu koNTaaN<<+ oru divasattil oru
+  tithi enna kaNakkinu saMbhavikkunnat.  en"kiluM,
+  candranReyuM suuRyanReyuM pathan"n"aL diiRghav.rttan"n"aLaakayaal tithidaiRghyattil
+  eeRRakkuRaccilukaL uNTaakaaM.</m>} <m>muunnu tithikaLuLLa divasan"n"aLe raNTu
+  variyilaayuM, oru tithi maatramuLLa divasan"n"aLe aa
+  tithi maatraM (samayaM kuuTaate) kaaNiccuM
+  reekhappeTuttiyirikkunnu.
+  </m>
+
+\subsection{<m>nityayoogaM</m>}
+\label{sec:NityaYogam}
+  <m>
+  suuRyacandranmaaruTe sphuTan"n"aLuTe tukaye </m>$0^\circ -
+  360^\circ$<m>-leekku saMskariccatine </m>$27${}
+  <m>samabhaagan"n"aLaayi vibhajiccatinRe ooroo bhaagatteyuM
+  {\bf\em nityayoogaM} ennu paRayunnu.
+
+  nityayoogan"n"aLuM avayuTe sphuTan"n"aLuM paTTikayaayi </m>
+ \cite{Panickar}  Table~\ref{tab:nityayogams}-<m>l koTuttirikkunnu.</m>
+
+\begin{table}
+\centering
+\input{nityayogams}
+\caption{<m>nityayoogan"n"aL</m>}
+\label{tab:nityayogams}
+\end{table}
+
+\subsection{<m>pan~caaMgaM</m>}
+<m>
+mukaLil suucippicca tithi, vaaraM, nakSatraM, nityayoogaM,
+karaNaM enniva ceeRnnataaN<<+ {\bf\em pan~caaMgaM}.
+</m>
+
+\subsection{<m>suuRyoodayavuM suuRyaastamayavuM</m> (Sunrise and
+  sunset)} <m>oru sthalatte cakravaaLattil
+  suuRyakeendraM</m>\FootNote{<m>aadhunikajyootishshaastrattil suuRyanRe
+  mukaLbhaagaM</m> (upper limb) <m> ettunna samayan"n"aLaaN<<+
+  suuRyoodayavuM suuRyaastamayavuM. itaaN<<+
+  paashcaatyaruTe kalaNTaRukaLiluM</m>
+  almanac-<m>kaLiluM kaaNuka.  ii samayattin<<+ ii
+  kalaNTaRil koTutta samayattekkaaL sharaashari muunnu
+  miniTTinRe vyatyaasaM uNTaakuM.</m>} <m> ettunna samayan"n"aLaaN<<+
+  suuRyoodayavuM suuRyaastamayavuM.  
+
+  suuRyanRe udayaastamayan"n"aL keeraLakaalagaNanattil
+  vaLare pradhaanamaaN<<+.  divasaM kaNakkaakkunnat
+  suuRyoodayaM mutal suuRyoodayaM vareyuLLa kaalayaLavaaN<<+.</m>
+  
+%%   udayaastamayan"n"aL</m> 
+%% \PageRange{sec:p1Start}{sec:p1End}
+%%   <m>koTuttirikkunnu.  iva ii pan~caaMgaM gaNiccirikkunna
+%%   sthalattinu maatramee shariyaavukayuLLuu.
+%% </m>
+
+\subsection{<m>lagnaM</m> (Ascendant)} <m>oru sthalatt oru
+  pratyeekasamayatt oru sthiradishayil</m>\FootNote{<m>ii {\em sthiradisha}yeppaRRi
+  grahasphuTan"n"aLe vishadiikarikkunniTattu </m> \SecRef{sec:grahasphutam}<m> nookkuka.</m>}<m> ninnu kizhakke
+  cakravaaLattileeykkuLLa aaMgiL aaNu {\bf\em lagnaM}.
+  grahasphuTaM poole ituM raashiyuM sphuTavumaayi
+  suucippikkunnu.</m>
+
+%% \PageRange{sec:p4Start}{sec:p4End}{} <m>oru divasattil
+%%   uNTaakaavunna 12 lagnan"n"aLuM 
+%% ava avasaanikkunna
+%%    samayan"n"aLuM koTuttirikkunnu.  laahiriyuTe</m>
+%%   \cite{Lahiri} <m>niR{}vvacanan"n"aLuM svantaM
+%%   gaNanakriyayuM upayoogiccaaN<<+ iva tayyaaRaakkiyiTTuLLat.
+
+%% iva ii pan~caaMgaM gaNiccirikkunna
+%%   sthalattinu maatramee shariyaavukayuLLuu.
+%% </m>
+
+\subsection{<m>yaaman"n"aLuM kaalan"n"aLuM</m>} <m>pakaline(suuRyoodayaM mutal
+  suuRyaastamayaM vareyuLLa samayaM)yuM
+  raatriye(suuRyaastamayaM mutal suuRyoodayaM vareyuLLa
+  samayaM)yuM naalu samabhaagan"n"aLaayittiriccatinRe ooroo
+  bhaagatteyuM {\bf\em yaamaM} ennu viLikkunnu.  yaamattinRe
+  pakutiye {\bf\em yaamaaRddhaM} ennoo {\bf\em kaalaM} ennoo
+  viLikkunnu.  aaRu maNiykk udayavuM aaRu maNiykk astamayavuM
+  enna kaNakkanusaricc yaamaM muunnu maNikkuuRuM (eezhara
+  naazhika) kaalaM onnara maNikkuuRuM (muunneemukkaal
+  naazhika) ennoru eekadeeshakkaNakku paRayumen"kiluM
+  raappakalukaLuTe eeRRakkuRaccilanusaricc ivayiluLLa
+  vyatyaasan"n"aLuM kaNakkileTukkeeNTataaN<<+.
+
+  pakalsamayattu maatraM kaNakkaakkunna raahukaalaM, guLikakaalaM,
+  yamakaNTakakaalaM ennivayuTe samayan"n"aL
+  </m>Table~\ref{tab:kaalangngaL}-<m>l koTuttiTTuNT.  saMkhyakaL suuRyoodayattinReyuM
+  suuRyaastamayattinReyum iTaykkuLLa 8 yaamaaRddhan"n"aLe
+  suucippikkunnu.  avayuTe eekadeeshasamayaM (6 maNikk udicc
+  6 maNikk astamikkunnu enna kaNakkinuLLat)
+  koTuttiTTuNTen"kiluM, ataatu divasatte
+  suuRyoodayaastamayaM anusariccuLLa vyatyaasan"n"aL
+  kaNakkaakkaNaM. raahukaalaM maatramee ii
+  pan~caaMgattil ceeRttiTTuLLuu. udayaastamayan"n"aL ooroo
+  divasatteyuM koTuttiTTuLLatukoNTu maRRu kaalan"n"aLuM
+  kaNTupiTikkaan vaiSamyamuNTaavukayilla.
+  </m>
+
+  \newcommand{\Ra}{<m>raahu</m>}
+  \newcommand{\Gu}{<m>guLika</m>}
+  \newcommand{\Ya}{<m>yama</m>}
+
+
+\begin{table}
+\centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+    \hline
+    <m>aazhca</m> & \multicolumn{8}{c|}{<m>kaalan"n"aL</m>} \\
+    \cline{2-9}
+    & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+    \hline
+    <m>n~aayaR</m> & & & & & \Ya & & \Gu & \Ra \\
+    <m>tin"kaL</m> & & \Ra & & \Ya & & \Gu & & \\
+    <m>covva</m> & & & \Ya & & \Gu & & \Ra & \\
+    <m>budhan</m> & & \Ya & & \Gu & \Ra & & &\\
+    <m>vyaazhaM</m> & \Ya & & \Gu & & & \Ra & &\\
+    <m>veLLi</m> & & \Gu & & \Ra & & & \Ya & \\
+    <m>shani</m> & \Gu & & \Ra & & & \Ya & & \\
+    \hline
+    6:00 - 6:00 & 6:00 -  & 7:30 -  &
+    9:00 -  & 10:30 -  & 12:00 -  & 1:30 -
+     & 3:00 - & 4:30 -  \\
+    <m>divasattil</m> & 7:30 & 9:00 &
+    10:30 & 12:00 & 1:30 & 
+    3:00 & 4:30 & 6:00 \\
+    \hline
+  \end{tabular}
+\caption{<m>kaalan"n"aL</m>}
+\label{tab:kaalangngaL}
+\end{table}
+
+\subsection{<m>malayaaLaM tiiyati</m>} 
+\label{sec:Tiiyati}
+<m>suuRyan san~carikkunna
+  raashiyaaN<<+ malayaaLamaasaM.  suuRyanRe raashisaMkramaM madhyaahnaM kazhiyunnatinu
+  mumpaaNen"kil</m>\FootNote{<m>pakaline an~cu
+  samabhaagan"n"aLaayi tiriccatil muunnaamatte ahnamaaN<<+
+  madhyaahnaM.  (praahnaM, puuR{}vvaahnaM, madhyaahnaM,
+  aparaahnaM, saayaahnaM ennivayaNu ahnan"n"aL.) atinaal
+  madhyaahnaM kazhiyunnatu pakalinRe</m> $\frac{3}{5}$   <m>kazhiyumpoozhaaN<<+,
+  naTTuccaykkalla.</m>} 
+  <m>aa divasavuM allen"kil piRRee
+  divasavumaaN<<+ maasappiRaviyaayi karutunnat.</m>\FootNote{<m>vaTakke
+  malabaaRil alpaM vyatyaasamuNT - eppoozhuM piRRee divasaM
+  tanne maasappiRaviyaayi karutunnu.  athavaa, suuRyan oru
+  raashiyil varunna aadyatte suuRyoodayattinaaNu vaTakkee
+  malabaaRil maasaM tuTan"n"uka.</m>}
+
+  <m>malayaaLamaasagaNanaM tikaccuM
+  jyootishshaastrariitiyilaayatukoNT maasattile
+  divasan"n"aLuTe eNNattil eeRRakkuRaccilukaL (28 mutal 32
+  divasaM vare) uNTaakaaM.</m>
+
+<m>malayaaLattiiyati kaNTupiTikkaan ``maat.rbhuumi''
+  kalaNTaRile riiti upayoogiccirikkunnu.  eetaanuM vaRSaM
+  mump itineppaRRi oru taR{}kkaM uNTaayappool itinRe
+  vishadavivaran"n"aL  ``maat.rbhuumi''
+  prasiddhiikariccirunnu.</m>
+
+
+\section{<m>visheeSadivasan"n"aL</m>}
+<m>
+jyootishshaastrapraadhaanyamuLLatuM,
+iMgliiS/malayaaLakaalagaNanaM koNTu maatraM kaNTupiTikkaavunnatuM
+(pala hindu visheeSadivasan"n"aLkkuM
+shakavaRSakaalagaNanavuM musliM visheeSadivasan"n"aLkku
+hijRavaRSakaalagaNanavuM
+aavashyamaaN<<+.) aaya cila visheeSadivasan"n"aL ii
+pan~caaMgattil ooroo maasattinReyuM peejil ceeRttiTTuNT.
+ivayuTe niR{}vvacanan"n"aL taazhecceeR{}kkunnu:
+</m>
+
+\subsection{<m>iMgliiS tiiyatiyuTe
+  aTisthaanattiluLLava</m>}
+<m>
+cila visheeSadivasan"n"aL grigooRiyan kalaNTaRile
+nishcitatiiyatiyil aaghooSikkunnu.
+</m> Table~\ref{tab:holidays}-<m>l kkoTuttirikkunna visheeSadivasan"n"aL ii
+kalaNTaRil uLkkoLLicciTTuNT.
+</m>
+
+\begin{table}
+\centering
+\begin{tabular}{|l|rl|}
+\hline
+{\bf <m>visheeSaM</m>} & \multicolumn{2}{c}{{\bf <m>tiiyati</m>}} \\
+\hline
+New year day & 1 & January \\
+Republic day (India) & 26 & January \\
+Valentines's day & 14 & February \\
+Independence day (US) & 4 & July \\
+Independence day (India) & 15 & August \\
+<m>gaandhi jayanti</m> & 2 & October \\
+Halloween & 31 & October \\
+<m>keeraLappiRavi</m> & 1 & November \\
+Christmas & 25 & December \\
+\hline
+\end{tabular}
+\caption{<m>sthiramaaya vishESadivasan"n"aL</m>}
+\label{tab:holidays}
+\end{table}
+
+\subsection{<m>jyootishshaastraniR{}vvacanan"n"aL
+  paalikkunna visheeSadivasan"n"aL</m>}
+
+\subsubsection{<m>tiruvooNaM</m>}
+<m>
+cin"n"amaasavuM tiruvooNaM nakSatravuM kuuTi
+suuRyoodayasamayattu varunna avasaanatte divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>viSu</m>}
+<m>
+meeTamaasaM onnaaM tiiyati.  itu meeTasaMkramattinRe
+divasamoo atinRe piRReennoo </m>\SecRef{sec:Tiiyati} <m> aavaaM.  (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>eekaadashi</m>}
+<m>
+suuRyoodayattin<<+ eekaadashi tithiyuM piRRee
+suuRyoodayattinumumpu dvaadashi tithiyuM varunna divasaM.
+it oru maasattil onniladhikaM uNTaavaaM.
+</m>
+
+\subsubsection{<m>pradooSaM</m>}
+<m>
+suuRyaastamayasamayattinu trayoodashi tithi aayirikkukayuM talee
+suuRyaastamayasamayattinu trayoodashi tithi
+aakaatirikkukayuM ceyyunna divasaM.
+it oru maasattil onniladhikaM uNTaavaaM.
+</m>
+
+\subsubsection{<m>SaSThi</m>}
+<m>
+veLuttapakSattile SaSThi tithi suuRyoodayattinu varunna
+divasaM.  saadhaaraNayaayi maasattil oreNNaM.
+</m>
+
+\subsubsection{<m>shivaraatri</m>}
+<m>
+kuMbhamaasavuM kaRutta pakSavuM catuRddashiyuM kuuTi
+aRddharaatriykku varunna aadyatte raatriyuTe divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>duRggaaSTami</m>}
+<m>
+kannimaasattile avasaanatte amaavaasikku sheeSaM varunna veLutta pakSattile aSTami tithi
+suuRyoodayattinu varunna avasaanatte divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>mahaanavami</m>}
+<m>
+kannimaasattile avasaanatte amaavaasikku sheeSaM varunna veLutta pakSattile navami tithi
+suuRyoodayattinu varunna avasaanatte divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>vijayadashami</m>}
+<m>
+kannimaasattile avasaanatte amaavaasikku sheeSaM varunna veLutta pakSattile dashami tithi
+suuRyoodayattinu varunna avasaanatte divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsubsection{<m>diipaavali</m>}
+<m>
+tulaamaasattile avasaanatte amaavaasikku toTTumumpuLLa
+catuRddashi suuRyoodayattinu varunna divasaM. (vaRSattil onn<<+.)
+</m>
+
+\subsection{<m>iisRRaRuM</m> (Easter) <m>atinooTanubandhicca
+  visheeSadivasan"n"aLuM</m>}
+Easter is {\em the first Sunday after the first full moon
+  occuring on or after the vernal equinox.}  \cite{Reginold}
+<m>
+iisRRaR kaNTupiTikkunnat vaLare san"kiiRNNamaaya oru
+gaNitakriyayaaN<<+.  </m> Christoph Clavius \cite{Reginold},
+  Spencer Jones \cite{Meuss1991} <m> ennivaR
+  aaviSkkariccatuM, kattoolikka, prooTTesRRanR sabhakaL
+  aMgiikariccatumaaya gaNitakriyayaaN<<+ ii pan~caaMgattil
+  upayoogicciTTuLLat.
+
+pala kristyan visheeSadivasan"n"aLuM iisRRaRinooT
+niRddiSTadivasan"n"aL kuuTTiyoo kuRaccoo
+kaNTupiTikkaavunnataaN<<+.  ii pan~caaMgattil
+</m> Table~\ref{tab:ChristialHolidays}-<m>l koTuttirikkunna visheeSadivasan"n"aL ceeRttirikkunnu.
+</m>
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|}
+  \hline
+  {\bf Day} & {\bf $\pm$~days} \\
+  \hline
+  Ash Wednesday & -46 \\
+  Passion Sunday & -14 \\
+  Palm Sunday & -7 \\
+  Maundy Thursday & -3 \\
+  Good Friday & -2 \\
+  Rogation Sunday & +35 \\
+  Ascension Day & +39 \\
+  Pentecost & +49 \\
+  Trinity Sunday & +56 \\
+  \hline
+\end{tabular}
+\caption{<m>kristyan vishESadivasan"n"aL</m>}
+\label{tab:ChristialHolidays}
+\end{table}
+
+<m>ivayellaaM vaRSattil onnu maatraM varunna visheeSadivasan"n"aLaaN<<+.</m>
+
+\subsection{<m>maasavuM aazhcayuM aTisthaanamaakkiyuLLa
+  visheeSadivasan"n"aL</m>}
+<m>
+lookattinRe maRRu palayiTattuM cila maasan"n"aLile cila
+pratyeeka aazhcakaLil visheeSadivasan"n"aL
+aaghooSikkaaRuNT.  ii kalaNTaRil</m> Table~\ref{tab:WestHolidays}-<m>l
+koTuttirikkunna visheeSadivasan"n"aL uLkkoLLicciTTuNT.</m>\cite{ocy}.
+
+\begin{table}
+\centering
+\begin{tabular}{|l|r|}
+  \hline
+  {\bf Holiday} & {\bf Definition} \\
+  \hline
+  Martin Luther king day (USA) & Third Monday in
+  January  \\
+  President's day (USA) & Third Monday in
+  February \\
+  Mother's day  & Second Sunday in
+  May  \\
+  Memorial day (USA) & Last Monday in
+  May  \\
+  Father's day  & Third Sunday in
+  June \\
+  Labor day (USA) & First Monday in
+  September  \\
+  Columbus day (USA) & Second Monday in
+  October  \\
+  Thanksgiving day (USA) & Fourth Thursday in
+  November  \\
+  \hline
+\end{tabular}
+\caption{<m>paashcaatyaruTe visheeSadivasan"n"aL</m>}
+\label{tab:WestHolidays}
+\end{table}
+
+
+\section{Daylight Savings Time correction}
+<m>
+uyaRnna akSaaMshattiluLLa pala raajyan"n"aLiluM eeprilinuM
+okToobaRinuM iTaykkuLLa kaalayaLavil saadhaaraNasamayattil
+ninnuM oru maNikkuuR mumpooTT</m>\FootNote{<m>iMglaNTil
+  raNTu maNikkuuR mumpooTTu maaRRunna riitiyuM 1940-kaLil
+  pariikSiccunookkiyiTTuNT.</m>} <m> maaRRunna pativuNT.  itu
+pala raajyan"n"aLiluM (atupoole cilayiTan"n"aLil oree raajyattile pala
+saMsthaanan"n"aLiluM) pala riitiyilaaN<<+
+paaliccuvarunnat.
+
+ii pan~caaMgattil </m>DST <m> uLLa raajyan"n"aLkku<<+ atum
+kaNakkileTuttiTTuNTu<<+.  raNTu samayan"n"aLuTeyum atiriluLLa
+divasan"n"aL raNTu tavaNa ceeR{}ttirikkunnu.
+\iffalse
+atinaal </m> DST details <m> oru </m> input parameter <m>
+aayi ooroo sthalattinuM pratyeekamaayi kaMpyuuTTaRinu
+nalkunnu.
+\fi
+</m>
+
+\section{<m>saan"keetikavivaran"n"aL</m>}
+<m>
+oru kampyuuTTaR proograminRe sahaayattaalaaN<<+ ii
+pan~caaMgaM tayaaRaakkiyat.  vishadavivaran"n"aL
+taazhecceeR{}kkunnu:
+
+</m>
+\begin{tabular}{ll}
+Astronomy Library (C) & Umesh Nair (1994) \\
+Calendar Program (C{\tt ++}) & Umesh Nair (2003-'4) \\
+Typesetting program & \LaTeXe (D.E. Knuth and Leslie Lamport)\\
+Malayalam fonts & Jeroen Hellingman \\
+Malayalam transliteration system & A.J. Alex
+(http://malayalam.sarovar.org) \\
+Utilities to generate text in Malayalam & A. J. Alex
+(http://malayalam.sarovar.org)
+\end{tabular}
+
+\iffalse
+\section{<m>kampyuuTTaR proograamukaL</m>}
+<m> jyootishshaastragaNitakriyakaLkku n~aan 1994-l ezhutiya
+  </m> C language library <m> upayoogiccirikkunnu.  pan~caaMgaM niRmmikkuvaan meelppaRan~n~a </m> C
+  library <m> upayoogikkunna oru </m> C{\tt ++} <m>
+  proograaM upayoogicc </m> input files <m>
+  uNTaakki, avaye alaks </m> A.J. \verb|(alexaj@myrealbox.com)| <m> tayyaaRaakkiya </m>
+  transliteration/malayalam typesetting program <m>
+  upayoogiccu </m> \LaTeXe <m>-yileekkuM pinniiT </m>
+  Portable Document Format<m>-leekkuM maaRRi.  ii mottaM
+  prakriyayuM oru proograamilttanne uLkkoLLicciTTuNT.
+  atupayoogicc eetu vaRSatteyuM pan~caaMgaM eetu
+  sthalattinuM uNTaakkaaM.</m>
+
+<m>ooroo sthalattinReyuM vivaran"n"aL oru </m> input file
+dataset <m> vazhi vaayicciTTaaN<<+ pan~caaMgaM
+tayyaaRaakkunnat. udaaharaNattin<<+ pooRTTlaanDinRe 2004-le
+</m> data <m> taazhecceeR{}kkunnu:</m>
+
+\begin{quote}
+\begin{verbatim}
+[Portland2004]
+Year=2004
+Name=Portland, Oregon, USA
+Latitude=45.3
+Longitude=122.77
+Timezone=-8.0
+DST=Yes
+StandardTimeZoneShortName=PST
+StandardTimeZoneLongName=Pacific Standard Time
+DaylightTimeZoneShortName=PDT
+DaylightTimeZoneLongName=Pacific Daylight Time
+DaylightStart=2004/4/4
+DaylightEnd=2004/10/31
+\end{verbatim}
+\end{quote}
+\fi

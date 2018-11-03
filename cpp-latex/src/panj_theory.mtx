@@ -1,0 +1,38 @@
+%% -*- latex -*-
+\documentclass{article}
+\title{<m>keeraLapan~caaMgagaNanaM</m>}
+\author{<m>umeeS naayaR</m>}
+\date{}
+\input{panjang_macros}
+\usepackage{multirow}
+\usepackage[flushmargin]{footmisc}
+\newcommand{\FootNote}[1]{\footnote{#1\par}}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\listoftables
+
+\clearpage
+
+%% After TOC, skip a line between paragraphs
+\addtolength{\parskip}{0.5\baselineskip}
+
+\section{<m>aamukham</m>}
+
+<m>oru kampyuuTTaR prOgraam upayOgiccu lookattile pala
+sthalattumuLLavaR{}kku<<+ upakaarapradamaakunna vidhattil tayyaaR
+ceytuvarunna kEraLapan~caaMgattile (</m>Kerala Calendar<m>) muulyan"n"aL
+niR{}NNayikkaanuLLa tattvan"n"aLaaNu<<+ ii leekhanattil.
+
+itu~ eeten"kilum pan~caaMgattOToppam ceeR{}ttu vaayikkuka.
+</m>
+
+\input{panjang_det}
+
+\clearpage
+\bibliography{p}
+\bibliographystyle{unsrt}
+\end{document}

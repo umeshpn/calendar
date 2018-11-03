@@ -1,0 +1,42 @@
+@Book{Meuss1991,
+  author =    {Meuss, J.},
+  title =        {Astronomical Algorithms},
+  publisher =    {Willman-Bell, Inc.},
+  year =         {1991},
+}
+@Book{Duffet1992,
+  author =    {Duffet-Smith, P.},
+  title =        {Practical Astronomy with
+    your Calculator, 3rd. Ed.},
+  publisher =    {Cambridge University Press},
+  year =         {1992},
+}
+
+@Book{Lahiri,
+  author =    {Lahiri, N.C.},
+  title =        {Tables of Ascendants},
+  publisher =    {Lahiri publishers},
+  year =         {1991},
+}
+
+@Book{Panickar,
+  author =    {\protect <m>vidvaan raamakr.SnaPPaNikkaR perin"n"aaT</m>},
+  title =        {\protect <m>jaatakagaNitakala</m>},
+  publisher =    {D.C. Books},
+  year =         {2000},
+}
+
+@Book{ocy,
+  author =    {Blackburn, B. and Holford-Strevens, L.},
+  title =        {The Oxford Companion to the Year},
+  publisher =    {Oxford University Press},
+  year =         {1999},
+}
+
+@Article{Umesh,
+  author =       {<m>umeeS naayar</m>},
+  title =        {<m>keeraLapan~caaMgagaNanaM</m>},
+  journal =      {<m>Paprakaashitam</m>},
+  year =         {2004},
+}
+

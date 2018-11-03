@@ -1,0 +1,6 @@
+\documentclass{article}
+\include{panjang_macros}
+\setlength{\tabcolsep}{1mm}
+\begin{document}
+\include{panjang_mukh}
+\end{document}

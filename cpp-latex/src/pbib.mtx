@@ -1,0 +1,71 @@
+%% -*- bibtex -*-
+
+@Book{Meuss1991,
+  author =    {Meuss, J.},
+  title =        {Astronomical Algorithms},
+  publisher =    {Willman-Bell, Inc.},
+  year =         {1991},
+}
+@Book{Duffet1992,
+  author =    {Duffet-Smith, P.},
+  title =        {Practical Astronomy with
+    your Calculator, 3rd. Ed.},
+  publisher =    {Cambridge University Press},
+  year =         {1992},
+}
+
+@Book{Lahiri,
+  author =    {Lahiri, N.C.},
+  title =        {Tables of Ascendants for Nirayana Basis for all latitudes from $0^\circ$ to $60^\circ$},
+  publisher =    {Astro-research Bureau, Calcutta},
+  year =         {1992},
+}
+
+@Book{Reginold,
+  author =    {Dershowitz, N. and Reingold, E.M.},
+  title =        {Calendrical Calculations},
+  publisher =    {Cambridge University Press},
+  year =         {1997},
+}
+
+@Book{UshaShashi,
+  author =    {Usha - Shashi},
+  title =        {Hindu Astrological Calculations},
+  publisher =    {Sagar Publications, New Delhi},
+  year =         {1993},
+}
+
+@Book{Panickar,
+  author =    {\protect <m>vidvaan raamak.rSNappaNikkaR perin"n"aaT</m>},
+  title =        {\protect <m>jaatakagaNitakala</m>},
+  publisher =    {D.C. Books},
+  year =         {2000},
+}
+
+@Book{Mathrubhoomi2002,
+  author =    {\protect <m>maat.rbhuumi</m>},
+  title =        {\protect <m>kalaNTaR 2003.</m>},
+  publisher =    {Mathrubhoomi},
+  year =         {2002},
+}
+
+@Misc{sarovar,
+  title =     {{\tt http://www.sarovar.org/}},
+  note =      {India's first portal to host projects under free/open source licenses},
+}
+
+
+@Book{ocy,
+  author =    {Blackburn, B. and Holford-Strevens, L.},
+  title =        {The Oxford Companion to the Year},
+  publisher =    {Oxford University Press},
+  year =         {1999},
+}
+
+@Article{Umesh,
+  author =       {<m>umeeS pi. en.</m>},
+  title =        {<m>keeraLapan~caaMgagaNanaM</m>},
+  journal =      {<m>aprakaashitaM</m>},
+  year =         {2004},
+}
+

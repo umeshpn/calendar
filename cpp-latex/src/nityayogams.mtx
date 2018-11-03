@@ -1,0 +1,28 @@
+%%  -*- latex -*-
+
+
+\begin{tabular}{|r|l|r||r|l|r|}
+
+\hline
+\# & {\bf <m>nityayoogaM</m>} & {\bf <m>sphuTam</m>} & \# & {\bf <m>nityayoogaM</m>} & {\bf <m>sphuTam</m>} \\
+\hline
+
+1 & <m>viSkaMbhaM</m> & $0^\circ~00' - 13^\circ~20'$& 15 & <m>vajra</m>&$186^\circ~40' - 200^\circ~00'$ \\
+2 & <m>priiti</m>&$13^\circ~20' - 26^\circ~40'$ & 16 & <m>siddhi</m>&$200^\circ~00' - 213^\circ~20'$ \\
+3 & <m>aayuSmaan</m> & $26^\circ~40' - 40^\circ~00'$& 17 & <m>vyatiipaata</m>&$213^\circ~20' - 226^\circ~40'$ \\
+4 & <m>saubhaagyam</m> & $40^\circ~00' - 53^\circ~20'$ & 18 & <m>variiyaan</m>& $226^\circ~40' - 240^\circ~00'$\\
+5 & <m>shoobhanaM</m> & $53^\circ~20' - 66^\circ~40'$ & 19 & <m>pariigha</m>&$240^\circ~00' - 253^\circ~20'$ \\
+6 & <m>atigaNDaM</m> & $66^\circ~40' - 80^\circ~00'$ & 20 & <m>shivaH</m>& $253^\circ~20' - 266^\circ~40'$\\
+7 & <m>sukaRmmaa</m> & $80^\circ~00' - 93^\circ~20'$ & 21 & <m>siddhaH</m>&$266^\circ~40' - 280^\circ~00'$ \\
+8 & <m>dh.rti</m> & $93^\circ~20' - 106^\circ~40'$ & 22 & <m>saaddhyaH</m>& $280^\circ~00' - 293^\circ~20'$\\
+9 & <m>shuulaM</m> &$106^\circ~40' - 120^\circ~00'$  & 23 & <m>shubhaH</m>&  $293^\circ~20' - 306^\circ~40'$\\
+10 & <m>gaNDa</m> & $120^\circ~00' - 133^\circ~20'$  & 24 & <m>shubhraH</m>& $306^\circ~40' - 320^\circ~00'$ \\
+11 & <m>v.rddhi</m> & $133^\circ~20' - 146^\circ~40'$ & 25 & <m>braahmaH</m>& $320^\circ~00' - 333^\circ~20'$ \\
+12 & <m>dhruvam</m> & $146^\circ~40' - 160^\circ~00'$ & 26 & <m>maakhaataH</m>& $333^\circ~20' - 346^\circ~40'$\\
+13 & <m>vyaaghaataM</m> & $160^\circ~00' - 173^\circ~20'$  & 27 & <m>vaidh.rtaH</m>& $346^\circ~40' - 360^\circ~00'$\\
+14 & <m>haRSaNaM</m> & $173^\circ~20' - 186^\circ~40'$ & & & \\
+
+\hline
+
+\end{tabular}
+

@@ -1,0 +1,26 @@
+%% -*- latex -*-
+
+\begin{tabular}{|l|r|l||l|r|l|}
+\hline
+\multicolumn{3}{|c||}{<m>veLutta pakSaM</m>} & \multicolumn{3}{c|}{<m>kaRutta pakSaM</m>} \\
+\hline
+<m>tithi</m> & <m>sphuTam</m> & <m>karaNaM</m> & <m>tithi</m> & <m>sphuTam</m>  & <m>karaNaM</m> \\
+\hline
+\ThithiB & \Deg{0} - \Deg{12} & <m>puzhu/siMhaM</m> & \ThithiQ & \Deg{180} - \Deg{192} & <m>puli/panni</m> \\
+\ThithiC & \Deg{12} - \Deg{24}& <m>puli/panni</m> & \ThithiR  & \Deg{192} - \Deg{204}  & <m>kazhuta/kari</m>\\
+\ThithiD & \Deg{24} - \Deg{36} & <m>kazhuta/kari</m> & \ThithiS & \Deg{204} - \Deg{216} & <m>surabhi/viSTi</m> \\
+\ThithiE & \Deg{36} - \Deg{48} & <m>surabhi/viSTi</m> &
+\ThithiT & \Deg{216} - \Deg{228} & <m>siMhaM/puli</m> \\
+\ThithiF & \Deg{48} - \Deg{60} & <m>siMhaM/puli</m> & \ThithiU & \Deg{228} - \Deg{240} & <m>panni/kazhuta</m> \\
+\ThithiG & \Deg{60} - \Deg{72} & <m>panni/kazhuta</m> &\ThithiV & \Deg{240} - \Deg{252}  & <m>kari/surabhi</m>\\
+\ThithiH & \Deg{72} - \Deg{84} &  <m>kari/surabhi</m> &\ThithiW & \Deg{252} - \Deg{264}  & <m>viSTi/siMhaM</m>\\
+\ThithiI & \Deg{84} - \Deg{96} &  <m>viSTi/siMhaM</m> &\ThithiX & \Deg{264} - \Deg{276}  & <m>puli/panni</m>\\
+\ThithiJ & \Deg{96} - \Deg{108} &  <m>puli/panni</m> &\ThithiY & \Deg{276} - \Deg{288}  & <m>kazhuta/kari</m>\\
+\ThithiK & \Deg{108} - \Deg{120} &  <m>kazhuta/kari</m> &\ThithiZ & \Deg{288} - \Deg{300} & <m>surabhi/viSTi</m> \\
+\ThithiL & \Deg{120} - \Deg{132} &  <m>surabhi/viSTi</m> &\Thithia & \Deg{300} - \Deg{312}  & <m>siMhaM/puli</m>\\
+\ThithiM & \Deg{132} - \Deg{144} &  <m>siMhaM/puli</m> &\Thithib & \Deg{312} - \Deg{324} & <m>panni/kazhuta</m> \\
+\ThithiN & \Deg{144} - \Deg{156} &  <m>panni/kazhuta</m> &\Thithic & \Deg{324} - \Deg{336} & <m>kari/surabhi</m> \\
+\ThithiO & \Deg{156} - \Deg{168} &  <m>kari/surabhi</m> &\Thithid & \Deg{336} - \Deg{348} & <m>viSTi/shakuni</m> \\
+\ThithiP & \Deg{168} - \Deg{180} &  <m>viSTi/siMhaM</m> &\ThithiA & \Deg{348} - \Deg{360}  & <m>catuSpaatt/naagaM</m>\\
+\hline
+\end{tabular}

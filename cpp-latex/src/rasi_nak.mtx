@@ -1,0 +1,835 @@
+%% -*- latex -*-
+
+\begin{table}
+\begin{tabular}{|c|c|c|c|l|}
+  \hline
+  <m>raashi</m> & <m>nakSatraM</m> & <m>paadaM</m> &
+  <m>kala</m> & <m>navaaMshaM</m> \\
+  \hline
+  \multirow{9}{1in}{\begin{minipage}{1.2in}\RasiA  \\
+  $0^\circ~00' - 30^\circ~00'$\end{minipage}}
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarA  \\
+  $0^\circ~00' - 13^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $0^\circ~00'- 3^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $3^\circ~20'- 6^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $6^\circ~40'- 10^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $10^\circ~00'- 13^\circ~20'$ & \RasiD \\
+  
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarB \\
+  $13^\circ~20' - 26^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $13^\circ~20'- 16^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $16^\circ~40'- 20^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $20^\circ~00'- 23^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $23^\circ~20'- 26^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarC \\
+  $26^\circ~40' - 40^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $26^\circ~40'- 30^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+  \cline{1-1}
+
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiB \\
+  $30^\circ~00' - 60^\circ~00'$\end{minipage}}
+  &&
+  2
+  &
+  $30^\circ~00'- 33^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $33^\circ~20'- 36^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $36^\circ~40'- 40^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarD  \\
+  $40^\circ~00' - 53^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $40^\circ~00'- 43^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $43^\circ~20'- 46^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $46^\circ~40'- 50^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $50^\circ~00'- 53^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarE \\
+  $53^\circ~20' - 66^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $53^\circ~20'- 56^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $56^\circ~40'- 60^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiC  \\
+  $60^\circ~00' - 90^\circ~00'$\end{minipage}}
+  &&
+  3
+  &
+  $60^\circ~00'- 63^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $63^\circ~20'- 66^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarF \\
+  $66^\circ~40' - 80^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $66^\circ~40'- 70^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $70^\circ~00'- 73^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $73^\circ~20'- 76^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $76^\circ~40'- 80^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarG \\
+  $80^\circ~00' - 93^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $80^\circ~00'- 83^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $83^\circ~20'- 86^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $86^\circ~40'- 90^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiD \\
+  $90^\circ~00' - 120^\circ~00'$\end{minipage}}
+
+  &&
+  4
+  &
+  $90^\circ~00'- 93^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarH \\
+  $93^\circ~20' - 106^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $93^\circ~20'- 96^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $96^\circ~40'- 100^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $100^\circ~00'- 103^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $103^\circ~20'- 106^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+   &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarI \\
+  $106^\circ~40' - 120^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $106^\circ~40'- 110^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $110^\circ~00'- 113^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $113^\circ~20'- 116^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $116^\circ~40'- 120^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  \cline{1-1}
+
+\end{tabular}
+\caption{<m>raashikaLum nakSatran"n"aLum - 1</m>}
+\label{tab:raaSinakSatramOne}
+\end{table}
+%% \clearpage
+\begin{table}
+\begin{tabular}{|c|c|c|c|l|}
+  \hline
+  <m>raashi</m> & <m>nakSatraM</m> & <m>paadaM</m> &
+  <m>kala</m> & <m>navaaMshaM</m> \\
+  \hline
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiE \\
+  $120^\circ~00' - 150^\circ$\end{minipage}}
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarJ \\
+  $120^\circ~00' - 133^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $120^\circ~00'- 123^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $123^\circ~20'- 126^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $126^\circ~40'- 130^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $130^\circ~00'- 133^\circ~20'$ & \RasiD \\
+  
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarK \\
+  $133^\circ~20' - 146^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $133^\circ~20'- 136^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $136^\circ~40'- 140^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $140^\circ~00'- 143^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $143^\circ~20'- 146^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarL \\
+  $146^\circ~40' - 160^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $146^\circ~40'- 150^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+  \cline{1-1}
+
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiF \\
+  $150^\circ~00' - 180^\circ~00'$\end{minipage}}
+  &&
+  2
+  &
+  $150^\circ~00'- 153^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $153^\circ~20'- 156^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $156^\circ~40'- 160^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarM \\
+  $160^\circ~00' - 173^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $160^\circ~00'- 163^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $163^\circ~20'- 166^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $166^\circ~40'- 170^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $170^\circ~00'- 173^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarN \\
+  $173^\circ~20' - 186^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $173^\circ~20'- 176^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $176^\circ~40'- 180^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiG \\
+  $180^\circ~00' - 210^\circ~00'$\end{minipage}}
+  &&
+  3
+  &
+  $180^\circ~00'- 183^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $183^\circ~20'- 186^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarO \\
+  $186^\circ~40' - 200^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $186^\circ~40'- 190^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $190^\circ~00'- 193^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $193^\circ~20'- 196^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $196^\circ~40'- 200^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarP \\
+  $200^\circ~00' - 213^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $200^\circ~00'- 203^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $203^\circ~20'- 206^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $206^\circ~40'- 210^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiH \\
+  $210^\circ~00' - 240^\circ~00'$\end{minipage}}
+
+  &&
+  4
+  &
+  $210^\circ~00'- 213^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarQ \\
+  $213^\circ~20' - 226^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $213^\circ~20'- 216^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $216^\circ~40'- 220^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $220^\circ~00'- 223^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $223^\circ~20'- 226^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+   &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarR \\
+  $226^\circ~40' - 240^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $226^\circ~40'- 230^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $230^\circ~00'- 233^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $233^\circ~20'- 236^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $236^\circ~40'- 240^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  \cline{1-1}
+
+\end{tabular}
+\caption{<m>raashikaLum nakSatran"n"aLum - 2</m>}
+\label{tab:raaSinakSatramTwo}
+\end{table}
+%% \clearpage
+\begin{table}
+\begin{tabular}{|c|c|c|c|l|}
+  \hline
+  <m>raashi</m> & <m>nakSatraM</m> & <m>paadaM</m> &
+  <m>kala</m> & <m>navaaMshaM</m> \\
+  \hline
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiI \\
+  $240^\circ~00' - 270^\circ$\end{minipage}}
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarS \\
+  $240^\circ~00' - 253^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $240^\circ~00'- 243^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $243^\circ~20'- 246^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $246^\circ~40'- 250^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $250^\circ~00'- 253^\circ~20'$ & \RasiD \\
+  
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarT \\
+  $253^\circ~20' - 266^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $253^\circ~20'- 256^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $256^\circ~40'- 260^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $260^\circ~00'- 263^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $263^\circ~20'- 266^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarU \\
+  $266^\circ~40' - 280^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $266^\circ~40'- 270^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+  \cline{1-1}
+
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiJ \\
+  $270^\circ~00' - 300^\circ~00'$\end{minipage}}
+  &&
+  2
+  &
+  $270^\circ~00'- 273^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $273^\circ~20'- 276^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $276^\circ~40'- 280^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarV \\
+  $280^\circ~00' - 293^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $280^\circ~00'- 283^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $283^\circ~20'- 286^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $286^\circ~40'- 290^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $290^\circ~00'- 293^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarW \\
+  $293^\circ~20' - 306^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $293^\circ~20'- 296^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $296^\circ~40'- 300^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiK \\
+  $300^\circ~00' - 330^\circ~00'$\end{minipage}}
+  &&
+  3
+  &
+  $300^\circ~00'- 303^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $303^\circ~20'- 306^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarX \\
+  $306^\circ~40' - 320^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $306^\circ~40'- 310^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $310^\circ~00'- 313^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $313^\circ~20'- 316^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $316^\circ~40'- 320^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarY \\
+  $320^\circ~00' - 333^\circ~20'$\end{minipage}}
+  &
+  1
+  &
+  $320^\circ~00'- 323^\circ~20'$ 
+  & \RasiA \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $323^\circ~20'- 326^\circ~40'$ & \RasiB \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $326^\circ~40'- 330^\circ~00'$ & \RasiC \\
+  \cline{3-5}
+
+  \cline{1-1}
+  \multirow{9}{1.2in}{\begin{minipage}{1.2in}\RasiL \\
+  $330^\circ~00' - 360^\circ~00'$\end{minipage}}
+
+  &&
+  4
+  &
+  $330^\circ~00'- 333^\circ~20'$ & \RasiD \\
+  \cline{2-5}
+
+  &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\StarZ \\
+  $333^\circ~20' - 346^\circ~40'$\end{minipage}}
+  &
+  1
+  &
+  $333^\circ~20'- 336^\circ~40'$ 
+  & \RasiE \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $336^\circ~40'- 340^\circ~00'$ & \RasiF \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $340^\circ~00'- 343^\circ~20'$ & \RasiG \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $343^\circ~20'- 346^\circ~40'$ & \RasiH \\
+  \cline{2-5}
+
+   &
+  \multirow{4}{1.2in}{\begin{minipage}{1.2in}\Stara \\
+  $346^\circ~40' - 360^\circ~00'$\end{minipage}}
+  &
+  1
+  &
+  $346^\circ~40'- 350^\circ~00'$ 
+  & \RasiI \\
+  \cline{3-5}
+
+  &&
+  2
+  &
+  $350^\circ~00'- 353^\circ~20'$ & \RasiJ \\
+  \cline{3-5}
+
+  &&
+  3
+  &
+  $353^\circ~20'- 356^\circ~40'$ & \RasiK \\
+  \cline{3-5}
+
+  &&
+  4
+  &
+  $356^\circ~40'- 360^\circ~00'$ & \RasiL \\
+  \cline{2-5}
+
+  \cline{1-1}
+
+\end{tabular}
+\caption{<m>raashikaLum nakSatran"n"aLum - 3</m>}
+\label{tab:raaSinakSatramThree}
+\end{table}
