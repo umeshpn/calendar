@@ -17,7 +17,7 @@
 // using std::string;
 using namespace std;
 
-bool debugging = false;
+bool debugging = true;
 
 const char* lday_name[] = {
   "<m>n~aayaR</m>",
@@ -43,6 +43,11 @@ static const char* mmonths[] = {
   "<m>kuMbha</m>",
   "<m>miina</m>",
 };
+
+static const char* mal_months[] = {
+  "MEDAM", "IDAVAM", "MITHUNAM", "KARKADAKAM", "CHINGAM", "KANNI", "THULAM", "VRUSHCHIKAM", "DHANU", "MAKARAM", "KUMBHAM", "MEENAM"
+};
+
 
 static const char* mmmonths[] = {
   "\\RasiA", "\\RasiB", "\\RasiC", "\\RasiD", "\\RasiE", "\\RasiF", 
@@ -285,6 +290,10 @@ static char *hm_string(double j_day,char *any_str)
   char am_pm;
   int h, m;
 
+  if (j_day < 0) {
+    strcpy(any_str, " ");
+    return any_str;
+  }
   get_date_time(j_day, &dd, &tt);
 
   h = tt.ti_hour;
@@ -301,7 +310,7 @@ static char *hm_string(double j_day,char *any_str)
       h -= 12;
     }
   }
-  sprintf(any_str,"%2d:%02d%c", h, m, am_pm);
+  sprintf(any_str,"%d:%02d%c", h, m, am_pm);
   return(any_str);
 }
 
@@ -356,6 +365,50 @@ static char* get_naks_string(int nak, double j_day, int left, char* naks_str)
   }
   return naks_str;
 }
+
+static char* get_alt_naks_string(const char* prefix, int nak, double j_day, char* naks_str)
+{
+  char str[20];
+  char hm_str[20];
+
+  if (nak < 0) {
+    strcpy(naks_str, "  ");
+    return naks_str;
+  }
+  hm_string(j_day, hm_str);
+  if (strlen(hm_str) == 6) {
+    sprintf(naks_str, "%-15s %s%-8s", str, prefix, hm_str);
+  } else {
+    sprintf(naks_str, "%-15s  %s%-7s", str, prefix, hm_str);
+  }
+
+  if (debugging) {
+    fprintf(stderr, "nak = %d,  str = %s\n", nak, naks_str);
+  }
+  return naks_str;
+}
+
+static char* get_alt_thithis_string(const char* prefix, int thi, double j_day, char* thith_str)
+{
+  char hm_str[20];
+  char t_str[20];
+  char th_name[15];
+  if (thi < 0) {
+    strcpy(thith_str, " ");
+    return thith_str;
+  }
+  hm_string(j_day, hm_str);
+  if (strlen(hm_str) == 6) {
+    sprintf(thith_str, "%-15s %s%-8s", t_str, prefix, hm_str);
+  } else {
+    sprintf(thith_str, "%-15s  %s%-7s", t_str, prefix, hm_str);
+  }
+  if (debugging) {
+    fprintf(stderr, "thi = %d, str = %s\n", thi, thith_str);
+  }
+  return thith_str;
+}
+
 
 static char* get_thithis_string(int thi, double j_day, int left, char* thith_str)
 {
@@ -653,6 +706,7 @@ class CalendarCreator {
   void find_yamakantaka_kalam(double udayam, double astamayam, DURATION yamakantakaKalam);
   void find_madhyahnam(double udayam, double astamayam, DURATION kalam);
   char* duration_to_str(const DURATION duration, char* str);
+  char* alt_duration_to_str(const DURATION duration, char* str);
   void printVisheshams(FILE* fp, const std::vector<Vishesham>& visheshams);
  private:
   int year;
@@ -690,6 +744,7 @@ class CalendarCreator {
   FILE* outFp3;    // Sphutams
   FILE* outFp4;    // Lagnams
   FILE* outFp5;    // Uranus, Neptune, Pluto, Ayanamsham
+  FILE* alt_fp;
   int prev_rasi[DESC_NODE+1];
   int last_lagnam;
   int todaysStar;
@@ -722,6 +777,7 @@ class CalendarCreator {
   int trinitySDay;
   int previousYearLastDayNumber;
   bool is_month_at_sunrise;
+  bool alt_fp_written;
 };
 
 class MatchFinder {
@@ -794,6 +850,7 @@ CalendarCreator::CalendarCreator(const string& dataFileName,
       outFp3(0),
       outFp4(0),
       outFp5(0),
+      alt_fp(0),
       last_lagnam(-1),
       todaysStar(-1),
       todaysThithi(-1),
@@ -1035,6 +1092,12 @@ CalendarCreator::createCalendar(const string& placeId)
     return false;
   }
 
+  if ((alt_fp = fopen("alt.txt", "w")) == (FILE *) 0 )
+  {
+    cerr << "Cannot open " << "alt.txt" << endl;
+    return false;
+  }
+
   print_panjang(startJulianDay, nDays, shortStdTZ.c_str(), latitude, longitude) ;
   if (outFp1) fclose (outFp1) ;
   if (outFp2) fclose (outFp2) ;
@@ -1058,6 +1121,7 @@ int CalendarCreator::dayNumberOfMalMonthBeginning(double transitJDay)
     // Night
     // Return the next day by adding half day and returning the date
     get_date_time(this->localJulianDay(transitJDay + 0.5), &dd, &tt);
+    is_month_at_sunrise = true;
     return get_year_day_of_date(dd);
   } else{
     // Day
@@ -1109,7 +1173,11 @@ void CalendarCreator::print_month_top_heading(FILE* fp, int nColumns, int curr_y
   }
 
   // Print English month
-  fprintf(fp, "\\multicolumn{%d}{c}{\\Large %s %04d \\normalsize}\\\\\n", nColumns, engMonths[curr_month - 1], curr_year);
+  fprintf(fp, "\\multicolumn{%d}{c}{\\Large %s %04d \\normalsize}\\\\\n", nColumns, engMonths[curr_month - 1],
+  curr_year);
+  if (alt_fp != NULL && !alt_fp_written) {
+    fprintf(alt_fp, "\n\n\n\n\nMonth = %d %s\n", curr_year, mnth_name[curr_month - 1]);
+  }
 
   // Print timezone information
   if (dst) {
@@ -1146,12 +1214,27 @@ void CalendarCreator::print_month_top_heading(FILE* fp, int nColumns, int curr_y
   }
   mal_month1 = (curr_month + 7) % 12;
   mal_month2 = (mal_month1 + 1 ) % 12;
+  printf("AAA: %d %d %d\n", curr_month, mal_month1, mal_month2);
   if (mal_month2 == 4) {
     fprintf(fp, "\\multicolumn{%d}{c}{{\\bf <m>kollavaRSaM</m>} %d %s{} - %d %s, %s%s : %s}\\\\\n", nColumns, mal_year-1, mmmonths[mal_month1], 
             mal_year, mmmonths[mal_month2], mmonths[mal_month2], "<m>saMkramaM</m>", samkrama_str);
+    if (alt_fp != NULL && !alt_fp_written) {
+      fprintf(alt_fp, "Malayalam Months = %d %s - %d %s, Sankaramam = %s\n\n\n", mal_year-1, mal_months[mal_month1], mal_year, mal_months[mal_month2], samkrama_str);
+    }
   } else {
     fprintf(fp, "\\multicolumn{%d}{c}{{\\bf <m>kollavaRSaM</m>} %d %s{} - %s, %s%s : %s}\\\\\n", nColumns, mal_year, mmmonths[mal_month1], 
             mmmonths[mal_month2], mmonths[mal_month2], "<m>saMkramaM</m>", samkrama_str);
+    if (alt_fp != NULL && !alt_fp_written) {
+      fprintf(alt_fp, "Malayalam Months = %d %s - %s, Sankaramam = %s\n\n\n", mal_year, mal_months[mal_month1], mal_months[mal_month2], samkrama_str);
+    }
+  }
+
+  if (alt_fp != NULL  && !alt_fp_written) {
+    fprintf(alt_fp, "------------------------------------------------------------------------------------------------------\n");
+    fprintf (alt_fp, "%2s  %2s  %-10s  %-17s%6s    %-17s%6s    %14s  %12s\n",
+             "E", "M", "Weekday", "Star", "T1", "Thithi", "T2", "Rahukalam", "Sunrise/set");
+    fprintf(alt_fp, "------------------------------------------------------------------------------------------------------\n");
+
   }
   malMonth = mal_month1;
 
@@ -1191,6 +1274,8 @@ void CalendarCreator::print_month_top_heading(FILE* fp, int nColumns, int curr_y
   pradoshams.clear();
   ekadasis.clear();
   shastis.clear();
+
+  alt_fp_written = true;
 }
 
 void CalendarCreator::print_month_head (int curr_year, int curr_month, const char *time_zone, double j_day)
@@ -1208,8 +1293,10 @@ void CalendarCreator::print_month_head (int curr_year, int curr_month, const cha
     fprintf(outFp1, "\\section[%s]{}\n", engMonths[curr_month - 1]);
     fprintf(outFp1, "\\begin{tabular}{|r|r|r|l|l r|l r|r r|r r|}\n");
       
+    alt_fp_written = false;
     print_month_top_heading(outFp1, N_PANJ1_COLS, curr_year, curr_month, t_str);
-      
+    alt_fp_written = true;
+
     fprintf(outFp1, "\\hline\n");
     fprintf(outFp1, "\\multicolumn{3}{|c|}{\\Date} & \\WeekDay & \\multicolumn{2}{|c|}{\\Nakshatram} & \\multicolumn{2}{|c|}{\\Thithi} & \\multicolumn{2}{c|}{\\Udayastamayam} & \\multicolumn{2}{c|}{\\Rahukalam}\\\\\n");
     fprintf(outFp1, "\\cline{1-3}\n");
@@ -1312,6 +1399,11 @@ void CalendarCreator::print_month_tail(int curr_year, int curr_month, const char
   print_common_month_tail(outFp2, N_PANJ2_COLS, curr_year, curr_month, time_zone);
   print_common_month_tail(outFp3, N_PANJ3_COLS, curr_year, curr_month, time_zone);
   print_common_month_tail(outFp4, N_PANJ4_COLS, curr_year, curr_month, time_zone);
+
+  if (alt_fp != NULL) {
+    fprintf(alt_fp, "------------------------------------------------------------------------------------------------------\n");
+  }
+
 
   if (outFp1) {
     std::vector<Vishesham> visheshams;
@@ -1588,56 +1680,74 @@ void CalendarCreator::printHolidays(FILE* fp)
   if (fp) {
 
     std::vector<Vishesham> visheshams;
+    std::vector<Vishesham> alt_visheshams;
     if (thiruvonamDay > 0) {
       visheshams.push_back(Vishesham("<m>tiruvooNaM</m>", thiruvonamDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Thiruvonam", thiruvonamDay, Vishesham::INDIAN));
     }
     if (vishuDay > 0) {
       visheshams.push_back(Vishesham("<m>viSu</m>", vishuDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Vishu", vishuDay, Vishesham::INDIAN));
     }
     if (durgaashtamiDay > 0) {
       visheshams.push_back(Vishesham("<m>duRggaaSTami</m>", durgaashtamiDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Durgaashtami", durgaashtamiDay, Vishesham::INDIAN));
     }
     if (mahaanavamiDay > 0) {
       visheshams.push_back(Vishesham("<m>mahaanavami</m>", mahaanavamiDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Mahaanavami", mahaanavamiDay, Vishesham::INDIAN));
     }
     if (vijayadasamiDay > 0) {
       visheshams.push_back(Vishesham("<m>vijayadashami</m>", vijayadasamiDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Vjayadashami", vijayadasamiDay, Vishesham::INDIAN));
     }
     if (sivaratriDay > 0) {
       visheshams.push_back(Vishesham("<m>shivaraatri</m>", sivaratriDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("shivaraathri", sivaratriDay, Vishesham::INDIAN));
     }
     if (deepavaliDay > 0) {
       visheshams.push_back(Vishesham("<m>diipaavali</m>", deepavaliDay, Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Deepavali", deepavaliDay, Vishesham::INDIAN));
     }
     if (easterDay > 0) {
       visheshams.push_back(Vishesham("<m>uyiRttezhunneelppu perunnaaL</m> (Easter)", easterDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Easter", easterDay, Vishesham::WORLD));
     }
     if (ashWDay > 0) {
       visheshams.push_back(Vishesham("<m>kSaarabudhan</m> (Ash Wednesday)", ashWDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Ash Wednesday", ashWDay, Vishesham::WORLD));
     }
     if (passionSDay > 0) {
       visheshams.push_back(Vishesham("Passion Sunday", passionSDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Passion Sunday", passionSDay, Vishesham::WORLD));
     }
     if (palmSDay > 0) {
       visheshams.push_back(Vishesham("<m>kuruttoolapperunnaaL</m> (Palm Sunday)", palmSDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Palm Sunday", palmSDay, Vishesham::WORLD));
     }
     if (maundyTDay > 0) {
       visheshams.push_back(Vishesham("<m>pesahaa vyaazhaazhca</m> (Maundy Thursday)", maundyTDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Maundy Thursday", maundyTDay, Vishesham::WORLD));
     }
     if (goodFDay > 0) {
       visheshams.push_back(Vishesham("<m>duHkhaveLLiyaazhca</m> (Good Friday)", goodFDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Good Friday", goodFDay, Vishesham::WORLD));
     }
     if (regationSDay > 0) {
       visheshams.push_back(Vishesham("Regation Sunday", regationSDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Regation Sunday", regationSDay, Vishesham::WORLD));
     }
     if (ascensionDay > 0) {
       visheshams.push_back(Vishesham("Ascension Day", ascensionDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Ascension Day", ascensionDay, Vishesham::WORLD));
     }
     if (penteCostDay > 0) {
       visheshams.push_back(Vishesham("Pentecost", penteCostDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Pentecost", penteCostDay, Vishesham::WORLD));
     }
     if (trinitySDay > 0) {
       visheshams.push_back(Vishesham("Trinity Sunday", trinitySDay, Vishesham::WORLD));
+      alt_visheshams.push_back(Vishesham("Trinity Sunday", trinitySDay, Vishesham::WORLD));
     }
 
     int dummy;
@@ -1645,17 +1755,25 @@ void CalendarCreator::printHolidays(FILE* fp)
     visheshams.push_back(Vishesham("New Year", get_day_number_in_year(year, 1, 1), Vishesham::WORLD));
     if (year >= 1950) {
       visheshams.push_back(Vishesham("<m>Rippablik dinaM</m>", get_day_number_in_year(year, 1, 26), Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Indian Republic Day", get_day_number_in_year(year, 1, 26), Vishesham::INDIAN));
     }
     if (year >= 1947) {
       visheshams.push_back(Vishesham("<m>svaatantryadinaM</m>", get_day_number_in_year(year, 8, 15), Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Indian Independence Day", get_day_number_in_year(year, 8, 15), Vishesham::INDIAN));
     }
     visheshams.push_back(Vishesham("Christmas", get_day_number_in_year(year, 12, 25), Vishesham::WORLD));
     visheshams.push_back(Vishesham("Valentines's day", get_day_number_in_year(year, 2, 14), Vishesham::WORLD));
     visheshams.push_back(Vishesham("US Independence day", get_day_number_in_year(year, 7, 4), Vishesham::AMERICAN));
     visheshams.push_back(Vishesham("Halloween", get_day_number_in_year(year, 10, 31), Vishesham::AMERICAN));
     visheshams.push_back(Vishesham("<m>gaandhi jayanti</m>", get_day_number_in_year(year, 10, 2), Vishesham::INDIAN));
+    alt_visheshams.push_back(Vishesham("Christmas", get_day_number_in_year(year, 12, 25), Vishesham::WORLD));
+    alt_visheshams.push_back(Vishesham("Valentines's day", get_day_number_in_year(year, 2, 14), Vishesham::WORLD));
+    alt_visheshams.push_back(Vishesham("US Independence day", get_day_number_in_year(year, 7, 4), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Halloween", get_day_number_in_year(year, 10, 31), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Gandhi Jayanthi", get_day_number_in_year(year, 10, 2), Vishesham::INDIAN));
     if (year >= 1956) {
       visheshams.push_back(Vishesham("<m>keeraLappiRavi</m>", get_day_number_in_year(year, 11, 1), Vishesham::INDIAN));
+      alt_visheshams.push_back(Vishesham("Keralappiravi", get_day_number_in_year(year, 11, 1), Vishesham::INDIAN));
     }
 
     // US Holidays
@@ -1669,6 +1787,16 @@ void CalendarCreator::printHolidays(FILE* fp)
     visheshams.push_back(Vishesham("Father's day", yearDayNumber(getFathersDay(year, dummy)), Vishesham::AMERICAN));
     visheshams.push_back(Vishesham("Mother's day", yearDayNumber(getMothersDay(year, dummy)), Vishesham::AMERICAN));
     visheshams.push_back(Vishesham("Columbus day", yearDayNumber(getColumbusDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Martin Luther King's day", yearDayNumber(getMLKDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("President's day", yearDayNumber(getPresidentsDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Thanksgiving day", yearDayNumber(getThanksgivingDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Memorial day", yearDayNumber(getMemorialDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Labor Day", yearDayNumber(getLaborDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Daylight savings starts", dstStartDayNumber, Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Daylight savings ends", dstEndDayNumber, Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Father's day", yearDayNumber(getFathersDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Mother's day", yearDayNumber(getMothersDay(year, dummy)), Vishesham::AMERICAN));
+    alt_visheshams.push_back(Vishesham("Columbus day", yearDayNumber(getColumbusDay(year, dummy)), Vishesham::AMERICAN));
 
     sort(visheshams.begin(), visheshams.end());
 
@@ -1704,6 +1832,16 @@ void CalendarCreator::printHolidays(FILE* fp)
       }
     }
       
+    if (alt_fp != NULL) {
+      fprintf(alt_fp, "\n\n\n\nHOLIDAYS\n\n\n\n");
+      sort(alt_visheshams.begin(), alt_visheshams.end());
+      for (it = alt_visheshams.begin(); it != alt_visheshams.end() ; ++it) {
+        int m, d;
+        if (get_month_and_day_from_day_number(it->day, year, m, d)) {
+          fprintf(alt_fp, "%02d %-10s %-10s %-20s\n", d, mnth_name[m-1], day_name[weekdayOfDate(year, m, d)], it->shortDescription.c_str());
+        }
+      }
+    }
 
     fprintf(fp, "\\hline\n");
     fprintf(fp, "\\end{tabular}\n");
@@ -1718,8 +1856,9 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
   double hind_long, d_nak, d_thithi, sun_moon_diff, moon_long, sun_long ;
   int nak, paksham, thithi ;
   char aya_str[20] ;
-  END_VALUES nak_ev, thi_ev;
+  END_VALUES nak_ev, thi_ev, alt_nak_ev, alt_thi_ev;
   char naks_str[50], naks_str1[50], thithi_str[50], thithi_str1[50];
+  char alt_naks_str[50], alt_naks_str1[50], alt_thithi_str[50], alt_thithi_str1[50];
   char udayam_str[20], astamayam_str[20];
   double udayam, astamayam;
 
@@ -1727,6 +1866,9 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
 
   int saka_year, saka_month, saka_day;
   gregorianToSaka(curr_date.da_year, curr_date.da_mon, curr_date.da_day, saka_year, saka_month, saka_day);
+
+
+  printf("j_day = %f\n", j_day);
 
   time_string(ayanamsa,DEGREE, FULL, aya_str) ;
   moon_long = norm_angle(pl_det[MOON].geo_long - ayanamsa) ;
@@ -1745,18 +1887,32 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
   strcpy(naks_str1, "");
   strcpy(thithi_str1, "");
 
+  strcpy(alt_naks_str, "");
+  strcpy(alt_thithi_str, "");
+  strcpy(alt_naks_str1, "");
+  strcpy(alt_thithi_str1, "");
+
   udayam = sunrise_between(j_day, j_day + 0.5, latitude, longitude);
   astamayam = sunset_between(j_day + 0.5, j_day + 1.0, latitude, longitude);
   find_naks_in_day(j_day, &nak_ev);
+  double next_udayam = sunrise_between(j_day + 1.0, j_day + 1.5, latitude, longitude);
+  find_naks_in_day_gen(udayam, next_udayam, &alt_nak_ev);
 
   if (debugging) {
     fprintf(stderr, "Date = %d/%d/%d, udayam = %f, astamayam = %f\n", curr_date.da_year,
             curr_date.da_mon, curr_date.da_day, udayam, astamayam);
+    fprintf(stderr, "Nakshathram: ");
     for (int i = 0; i < nak_ev.n_values; ++i) {
       fprintf(stderr, "%d  %d %15.4f : ", i, nak_ev.values[i].value, nak_ev.values[i].end_j_time);
     }
     fprintf(stderr, "\n");
+    fprintf(stderr, "Alt Nakshathram: ");
+    for (int i = 0; i < alt_nak_ev.n_values; ++i) {
+      fprintf(stderr, "%d  %d %15.4f : ", i, alt_nak_ev.values[i].value, alt_nak_ev.values[i].end_j_time);
+    }
+    fprintf(stderr, "\n");
   }
+
   if (nak_ev.n_values > 0) {
     int left;
     if (udayam < nak_ev.values[0].end_j_time) {
@@ -1766,16 +1922,67 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
       left = 0;
       todaysStar = (nak_ev.values[0].value+1)%27;
     }
-    get_naks_string(nak_ev.values[0].value, localJulianDay(nak_ev.values[0].end_j_time), left, naks_str);
 
+
+    get_naks_string(nak_ev.values[0].value, localJulianDay(nak_ev.values[0].end_j_time), left, naks_str);
     if (nak_ev.n_values > 1) {
       get_naks_string(nak_ev.values[1].value, localJulianDay(nak_ev.values[1].end_j_time), 0, naks_str1);
     } else {
       get_naks_string(-1, -1.0, 0, naks_str1);
     }
+
   } else {
     get_naks_string(nak, -1.0, 1, naks_str);
   }
+
+  printf("Found star\n");
+  char nak_prefix1[5];
+  char nak_prefix2[5];
+  char thi_prefix1[5];
+  char thi_prefix2[5];
+  strcpy(nak_prefix1, " ");
+  strcpy(nak_prefix2, " ");
+  strcpy(thi_prefix1, " ");
+  strcpy(thi_prefix2, " ");
+  if (alt_fp != NULL) {
+  
+    if (alt_nak_ev.n_values > 0) {
+      int left;
+      if (udayam < alt_nak_ev.values[0].end_j_time) {
+        left = 1;
+        todaysStar = alt_nak_ev.values[0].value;
+      } else {
+        left = 0;
+        todaysStar = (alt_nak_ev.values[0].value+1)%27;
+      }
+
+        if (debugging) {
+          fprintf(stderr, "Debugging for alt star:\n");
+          for (int i = 0; i < alt_nak_ev.n_values; ++i) {
+            int nak = alt_nak_ev.values[i].value;
+            fprintf(stderr, "  %d: %d (%s), %f\n", i, nak, nak_name[nak], alt_nak_ev.values[i].end_j_time);  // xxx
+          }
+        }
+
+      if (alt_nak_ev.values[0].end_j_time > j_day + 1.0) {
+        strcpy(nak_prefix1, "*");
+      }
+      get_alt_naks_string(nak_prefix1, alt_nak_ev.values[0].value, localJulianDay(alt_nak_ev.values[0].end_j_time), alt_naks_str);
+      if (alt_nak_ev.n_values > 1) {
+        if (alt_nak_ev.values[1].end_j_time > j_day + 1.0) {
+          strcpy(nak_prefix2, "*");
+        }
+        get_alt_naks_string(nak_prefix2, alt_nak_ev.values[1].value, localJulianDay(alt_nak_ev.values[1].end_j_time), alt_naks_str1);
+      } else {
+        get_alt_naks_string(nak_prefix2, -1, -1.0, alt_naks_str1);
+      }
+
+    } else {
+      get_alt_naks_string(nak_prefix1, (nak+1)%27, -1.0, alt_naks_str);
+    }
+
+  }
+  printf("Found alt star\n");
 
   find_thiths_in_day(j_day, &thi_ev);
   if (thi_ev.n_values > 0) {
@@ -1805,14 +2012,59 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
     get_thithis_string(thi_ev.values[0].value, localJulianDay(thi_ev.values[0].end_j_time), left, thithi_str);
     if (thi_ev.n_values > 1) {
       get_thithis_string(thi_ev.values[1].value, localJulianDay(thi_ev.values[1].end_j_time), 0, thithi_str1);
-    } else {
-      get_thithis_string(-1, -1.0, 0, thithi_str1);
     }
   } else {
-    tonightsThithi = todaysThithi = thithi;
+    tonightsThithi = todaysThithi = (thithi+1)%30;
     get_thithis_string(thithi, -1.0, 1, thithi_str);
   }
 
+  printf("Found thithi\n");
+
+  if (alt_fp != NULL) {
+    find_thiths_in_day_gen(udayam, next_udayam,  &alt_thi_ev);
+    if (alt_thi_ev.n_values > 0) {
+      int left;
+      if (udayam < alt_thi_ev.values[0].end_j_time) {
+        left = 1;
+        todaysThithi = alt_thi_ev.values[0].value;
+      } else {
+        left = 0;
+        todaysThithi = (alt_thi_ev.values[0].value+1)%30;
+      }
+      int j = 0;
+      tonightsThithi = -1;
+      while (j < alt_thi_ev.n_values) {
+        if (alt_thi_ev.values[j].end_j_time > astamayam) {
+          tonightsThithi = alt_thi_ev.values[j].value;
+          break;
+        } else {
+          ++j;
+        }
+      }
+
+      if (tonightsThithi < 0) {
+        tonightsThithi = (alt_thi_ev.values[alt_thi_ev.n_values-1].value + 1) % 30;
+      }
+
+      if (alt_thi_ev.values[0].end_j_time > j_day + 1.0) {
+        strcpy(thi_prefix1, "*");
+      }
+      get_alt_thithis_string(thi_prefix1, alt_thi_ev.values[0].value, localJulianDay(alt_thi_ev.values[0].end_j_time), alt_thithi_str);
+      if (alt_thi_ev.n_values > 1) {
+        if (alt_thi_ev.values[1].end_j_time > j_day + 1.0) {
+          strcpy(thi_prefix2, "*");
+        }
+        get_alt_thithis_string(thi_prefix2, alt_thi_ev.values[1].value, localJulianDay(alt_thi_ev.values[1].end_j_time), alt_thithi_str1);
+      } else {
+        get_alt_thithis_string(thi_prefix2, -1, -1.0, alt_thithi_str1);
+      }
+    } else {
+      tonightsThithi = todaysThithi = (thithi+1)%30;
+      get_alt_thithis_string(thi_prefix1, todaysThithi, -1.0, alt_thithi_str);
+    }
+  }
+
+    printf("Found alt thithi\n");
 
   hm_string(localJulianDay(udayam), udayam_str);
   hm_string(localJulianDay(astamayam), astamayam_str);
@@ -1940,7 +2192,7 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
     }
   }
 
-  char rahu_str[40], gulika_str[40], yamakantaka_str[40], madhyahna_str[40];
+  char rahu_str[40], alt_rahu_str[40], gulika_str[40], yamakantaka_str[40], madhyahna_str[40];
   char rb[20];
   char re[20];
 
@@ -1948,6 +2200,7 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
 
   find_rahu_kalam(udayam, astamayam, &kalam);
   duration_to_str(&kalam, rahu_str);
+  alt_duration_to_str(&kalam, alt_rahu_str);
    
   find_gulika_kalam(udayam, astamayam, &kalam);
   duration_to_str(&kalam, gulika_str);
@@ -1957,6 +2210,14 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
    
   find_madhyahnam(udayam, astamayam, &kalam);
   duration_to_str(&kalam, madhyahna_str);
+
+  double mid_day = (udayam + astamayam) / 2.0;
+
+  ST_DURATION abhijith;
+  char abhijith_str[50];
+  abhijith.beg = mid_day - 1.0 / 60.0;
+  abhijith.end = mid_day + 1.0 / 60.0;
+  duration_to_str(&abhijith, abhijith_str);
    
 
   if (outFp1) {
@@ -1964,9 +2225,21 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
              curr_date.da_day, malDay, saka_day, lday_name[weekday(localJulianDay(j_day), 0.0)],
              naks_str, thithi_str, udayam_str, astamayam_str, rahu_str);
 
+    if (alt_fp != NULL) {
+      fprintf (alt_fp, "%2d  %2d  %-10s  %-23s  %-23s  %14s   %s/%s\n",
+               curr_date.da_day, malDay, day_name[weekday(localJulianDay(j_day), 0.0)],
+               alt_naks_str, alt_thithi_str, alt_rahu_str, udayam_str, astamayam_str);
+      printf("Abhijith: %04d/%02d/%02d %s\n", curr_date.da_year, curr_date.da_mon, curr_date.da_day, abhijith_str);
+    }
+
     if ((nak_ev.n_values) > 1 || (thi_ev.n_values) > 1) {
       fprintf (outFp1, "&&&& %s  &  %s &&&&\\\\\n",
                naks_str1, thithi_str1);
+    }
+    if (alt_fp != NULL && (alt_nak_ev.n_values > 1 || alt_thi_ev.n_values > 1)) {
+      fprintf (alt_fp, "%2s  %2s  %-10s  %-23s    %-23s\n",
+               "", "", "",
+               alt_naks_str1, alt_thithi_str1);
     }
   }
 
@@ -2128,6 +2401,17 @@ char* CalendarCreator::duration_to_str(const DURATION duration, char* str)
   sprintf(str, "%s & %s", from, to);
   return str;
 }
+
+char* CalendarCreator::alt_duration_to_str(const DURATION duration, char* str)
+{
+  char from[20], to[20];
+  hm_string(localJulianDay(duration->beg), from);
+  hm_string(localJulianDay(duration->end), to);
+  sprintf(str, "%s-%s", from, to);
+  return str;
+}
+
+
 void CalendarCreator::find_rahu_kalam(double udayam, double astamayam, DURATION kalam)
 {
   static int i=0;

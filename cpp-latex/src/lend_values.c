@@ -145,6 +145,16 @@ int find_thiths_in_day (double j_day, END_VALUES* end_values)
    return find_matches(j_day, j_day+1.0, end_values,ithithi, 30);
 }
 
+int find_naks_in_day_gen (double j_day1, double j_day2, END_VALUES* end_values)
+{
+   return find_matches(j_day1, j_day2, end_values, inakshatram, 27);
+}
+
+int find_thiths_in_day_gen (double j_day1, double j_day2, END_VALUES* end_values)
+{
+   return find_matches(j_day1, j_day2, end_values,ithithi, 30);
+}
+
 int inakshatram(double j_day)
 {
    double l_sunt, l_earth, au_earth, l_moont, theta;

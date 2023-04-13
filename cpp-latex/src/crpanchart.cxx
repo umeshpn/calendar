@@ -20,9 +20,19 @@
 // using std::string;
 using namespace std;
 
-bool debugging = true;
+// Debug statements.
+bool debugging = false;
 
+// Show photos and slokams.
+static const bool with_picture_slokam = true;
+
+// For Boney.
 static const bool forBoney = false;
+
+// For Sandhya (Holidays)
+static const bool forSandhya = false;
+
+// Will be assigned from places.dat
 static bool forUSA = false;
 
 static const bool showMalayalam = true;
@@ -1210,6 +1220,7 @@ CalendarCreator::createCalendar(const string& placeId)
         nDays = atoi(value.c_str());
       } else {
         error = true;
+        std::cout << "Invalid var = " << var << std::endl;
         assert(false);
       }
     } else {
@@ -1217,6 +1228,7 @@ CalendarCreator::createCalendar(const string& placeId)
     }
   }
 
+ 
   if (error || !checkIfValid()) {
     assert(false);
     // return false;
@@ -1266,6 +1278,7 @@ int CalendarCreator::dayNumberOfMalMonthBeginning(double transitJDay)
     // Night
     // Return the next day by adding half day and returning the date
     get_date_time(this->localJulianDay(transitJDay + 0.5), &dd, &tt);
+    is_month_at_sunrise = true;
     return get_year_day_of_date(dd);
   } else{
     // Day
@@ -1411,7 +1424,15 @@ void CalendarCreator::print_month_head (int curr_year, int curr_month, const cha
 
 
   if (outFp) {
+    fprintf(outFp, "\\clearpage\n");
     fprintf(outFp, "\\begin{center}\n");
+    if (with_picture_slokam) {
+      fprintf(outFp, "\\includegraphics[width=0.9\\textwidth]{%02d.jpg}\n", curr_month);
+      fprintf(outFp, "{\\color{teal}\n");
+      fprintf(outFp, "\\begin{tabular}{p{1in}p{5in}p{1in}}\n");
+      fprintf(outFp, "& \\input{slokam-%02d} & \n", curr_month);
+      fprintf(outFp, "\\end{tabular}}\n");
+    }
     fprintf(outFp, "\\begin{tikzpicture}[scale=0.8]\n");
     fprintf(outFp, "\\node at (%6.1f, %6.1f) {{\\fontsize{%d}{0}\\selectfont{\\color{%s}\\YearFont \\textbf{%04d}}}};\n",
             0.5 * (min_x + max_x), max_y + y_scale,  yearSize, yearColor, curr_year);
@@ -1709,7 +1730,7 @@ void CalendarCreator::print_month_tail(int curr_year, int curr_month, const char
     // bottom_line += ", ";
     // bottom_line += longitudeString;
     // bottom_line += ").";
-    bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}.";
+    bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}. Photos by \\textsf{Manjith Kainickara}.";
 
 
     fprintf(outFp, "\\node at (%6.2f, %6.2f) {%s};", 0.5 * (min_x + max_x), -1.0, bottom_line.c_str());
@@ -1924,10 +1945,23 @@ void CalendarCreator::add_fixed_holidays (int year) {
   }
 
   if (forBoney) {
-    addFixedHoliday(indian_holidays, year, 5, 15, "റമദാൻ ആരംഭം");
-    addFixedHoliday(indian_holidays, year, 3, 2, "ഹോളി");
-    addFixedHoliday(indian_holidays, 2018, 6, 14, "ഈദ് അൽ ഫിത്തർ");
-    addFixedHoliday(indian_holidays, 2017, 8, 20, "ബക്രീഡ്");
+    addFixedHoliday(indian_holidays, year, 3, 22, "റമദാൻ ആരംഭം");
+    addFixedHoliday(indian_holidays, year, 3, 8, "ഹോളി");
+    addFixedHoliday(indian_holidays, year, 4, 22, "ഈദ് അൽ ഫിത്തർ");
+    addFixedHoliday(indian_holidays, year, 6, 29, "ബക്രീഡ്");
+  }
+
+  if (forSandhya) {
+    addFixedHoliday(foreign_holidays, 2021, 11, 14, "Vasudevan Birthday");
+    addFixedHoliday(indian_holidays, 2021, 11, 3, "Vasudevan Pirannal");
+    addFixedHoliday(foreign_holidays, 2021, 11, 30, "Sandhya Birthday");
+    addFixedHoliday(indian_holidays, 2021, 12, 12, "Sandhya Pirannal");
+    addFixedHoliday(foreign_holidays, 2021, 11, 9, "Megha Birthday");
+    // addFixedHoliday(indian_holidays, 2021, 10, 20, "Megha Pirannal");
+    addFixedHoliday(indian_holidays, 2021, 10, 21, "Megha Pirannal");
+    addFixedHoliday(foreign_holidays, 2021, 9, 30, "Varsha Birthday");
+    addFixedHoliday(indian_holidays, 2021, 9, 30, "Varsha Pirannal");
+    addFixedHoliday(foreign_holidays, 2021, 9, 13, "Wedding Anniversary");
   }
 }
 
@@ -2047,9 +2081,9 @@ void CalendarCreator::print_holidays_during(int start, int end, int wd)
 
 
       if (indian != indian_holidays.end()) {
-        y -= 0.4;
         vector<string>::iterator it =  indian->second.begin();
         while (it != indian->second.end()) {
+          y -= 0.4;
           cout << "Displaying " << *it << endl;
           fprintf(outFp, "\\node at (%6.1f, %6.1f)  {{\\fontsize{%d}{0}\\selectfont {\\color{MalHolidayColor}\\MalFont \\textbf{%s}}}};\n",
                   row_mid, y, holidaySize, it->c_str());
@@ -2057,9 +2091,9 @@ void CalendarCreator::print_holidays_during(int start, int end, int wd)
         }
       }
       if (foreign != foreign_holidays.end()) {
-        y -= 0.4;
         vector<string>::iterator it =  foreign->second.begin();
         while (it != foreign->second.end()) {
+          y -= 0.4;
           cout << "Displaying " << *it << endl;
           fprintf(outFp, "\\node at (%6.1f, %6.1f)  {{\\fontsize{%d}{0}\\selectfont {\\color{EngHolidayColor} \\textbf{%s}}}};\n",
                   row_mid, y, holidaySize, it->c_str());
@@ -2628,7 +2662,7 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
     }
         // col_pos -= 0.35;
 
-    char last_line[30];
+    char last_line[150];
     sprintf(last_line, "{\\color{Red}\\textbf{\\sun}}~%s/%s~~~~{\\color{Sepia}\\textbf{\\ascnode}}~%s", udayam_str, astamayam_str, rahu_str);
     fprintf(outFp, "\\node at (%6.1f, %6.1f) {{\\fontsize{%f}{0}\\selectfont%s}};\n",
             row_mid, col_mid - 0.46 * y_scale, sunRahuSize, last_line);
