@@ -374,6 +374,10 @@ void lmuh_details(FILE *fp,ABD birth_info,ST_PL_DET pl_details[],
 void print_seven_and_half_sani(FILE* fp, int moon_house, double birth_jday);
 void print_kandaka_sani(FILE* fp, int moon_house, double birth_jday);
 
+// int s_printf(char* buf, char const *fmt, ...);
+
+#define s_printf sprintf
+
 #if MAKE_FILE
 /*  External variables defined in AST_DATA.C     */
 

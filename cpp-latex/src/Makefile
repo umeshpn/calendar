@@ -1,8 +1,8 @@
 
 #CC=/usr/cygnus/mentor-98r2p39/H-sparc-sun-solaris2.7/bin/c++ 
 CC=/usr/bin/c++ -g
-MAL=/Users/umesh.nair/bin/mal.py
-POST_MAL=/Users/umesh.nair/bin/post_mal
+MAL=/Users/umesh/uscripts/mal.py
+POST_MAL=/Users/umesh/uscripts/post_mal
 
 %.o:../src/%.c 
 	$(CC) -c -I../src $<

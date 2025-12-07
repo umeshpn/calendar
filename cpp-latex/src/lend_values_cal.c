@@ -27,7 +27,6 @@ int find_matches(double start_j_day, double end_j_day, END_VALUES* end_values, A
    if (i == 0) {
      // The same value applies throughout the day.
      // This is needed to show the value.
-     printf("start_val = %d\n", start_val);
      end_values->values[0].value = start_val;
      end_values->values[0].end_j_time = -1.0;
    }
@@ -54,7 +53,6 @@ double find_next_match(int val, double start_j_day, double end_j_day, AstFunc fu
    while (new_val != end_of_day_val) {
      j_day += 1.0/ 24.0;
      new_val = (*func)(j_day);
-     // printf("j_day = %lf, new_val = %d\n", j_day, new_val);
      if (new_val != val) {
        if (new_val != next_val) {
          assert(false);
@@ -66,18 +64,15 @@ double find_next_match(int val, double start_j_day, double end_j_day, AstFunc fu
        while (high - low > 1.0/1440.0) {
          mid = 0.5 * (high + low);
          mid_val = (*func)(mid);
-         // printf("High = %lf, Low = %lf, Mid = %lf, Mid Val = %d\n", high, low, mid, mid_val);
          if (mid_val == val) {
            low = mid;
          } else {
            high = mid;
          }
        }
-       // printf ("BORDER = %lf\n", low);
        return low;
      }
 
-   // printf("val = %d, next_val = %d, new_val = %d\n", val, next_val, new_val);
    }
    return -1.0;
 #else
@@ -94,10 +89,9 @@ double find_next_match(int val, double start_j_day, double end_j_day, AstFunc fu
        }
      }
      new_val = (*func)(j_day);
-     // printf("j_day = %lf, new_val = %d\n", j_day, new_val);
    } while (new_val == val);
 
-   // printf("val = %d, next_val = %d, new_val = %d\n", val, next_val, new_val);
+
    if (new_val != next_val) {
       assert(false);
    }
@@ -107,14 +101,14 @@ double find_next_match(int val, double start_j_day, double end_j_day, AstFunc fu
    while (high - low > 1.0/1440.0) {
       mid = 0.5 * (high + low);
       mid_val = (*func)(mid);
-      // printf("High = %lf, Low = %lf, Mid = %lf, Mid Val = %d\n", high, low, mid, mid_val);
+
       if (mid_val == val) {
          low = mid;
       } else {
          high = mid;
       }
    }
-   // printf ("BORDER = %lf\n", low);
+
    return low;
 #endif
 }
@@ -127,7 +121,7 @@ double find_zero(double low, double high, AstDFunc func)
    assert (low < high);
    low_value = (*func)(low);
    high_value = (*func)(high);
-   // printf("Low = %f, low_value = %f, High = %f, high_value = %f\n", low, low_value, high, high_value);
+
    if (low_value < 0.0 && high_value > 0.0) {
       incr = 1;
    } else if (low_value > 0.0 && high_value < 0.0) {
@@ -139,7 +133,7 @@ double find_zero(double low, double high, AstDFunc func)
    while (low + SMALL_VALUE < high) {
       mid = 0.5 * (low + high);
       mid_value = (*func)(mid);
-      // printf("find_zero: low, high, mid = (%lf, %lf), (%lf, %lf), (%lf, %lf)\n",
+
       //       low, low_value, high, high_value, mid, mid_value);
 
       if (incr * mid_value < 0.0) {
@@ -200,7 +194,6 @@ int ithithi(double j_day)
    if (d_thithi > 15.0 )
       d_thithi -= 15.0 ;
    */
-   // printf("l_sunt = %f, l_moont = %f, smd = %f, thithi = %f\n", l_sunt, l_moont, smd, d_thithi);
    return (ith % 30);
 }
 
@@ -322,14 +315,10 @@ double sunrise_between(double low, double high, double latitude, double longitud
 
    alt_low = get_sun_altitude(low, latitude, longitude);
    alt_high = get_sun_altitude(high, latitude, longitude); 
-   // printf("low = %f, alt_low = %f, high = %f, alt_high = %f\n", low, alt_low, high, alt_high);
 
-   //   assert((alt_low < 0.0) && (alt_high > 0.0));
- 
    temp_latitude = latitude;
    temp_longitude = longitude;
 
-   // printf("temp_latitude = %f, temp_longitude = %f\n", temp_latitude, temp_longitude);
    return find_zero(low, high, temp_sun_altitude) ;
   
 }
@@ -340,10 +329,7 @@ double sunset_between(double low, double high, double latitude, double longitude
 
    alt_low = get_sun_altitude(low, latitude, longitude);
    alt_high = get_sun_altitude(high, latitude, longitude); 
-   // printf("low = %f, alt_low = %f, high = %f, alt_high = %f\n", low, alt_low, high, alt_high);
 
-   //   assert((alt_low > 0.0) && (alt_high < 0.0));
- 
    temp_latitude = latitude;
    temp_longitude = longitude;
 

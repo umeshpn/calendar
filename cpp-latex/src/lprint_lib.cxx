@@ -363,18 +363,27 @@ static void lprint_house(FILE *fp,HP_POS hp_pos,int h_no, int indian)
    char first_string[80],last_string[80],dummy[80];
    int zod_no,first_zod,last_zod ;
 
+   printf("Here\n");
    for (next_hp_pos = hp_pos -> next_hp ;  next_hp_pos -> hp_type == 'P' ;
         next_hp_pos = next_hp_pos -> next_hp)
       ;                      /*       NULL loop       */
+   printf("Here 1\n");
    first_degree = norm_angle(hp_pos -> degree) ;
+   printf("Here 2\n");
    last_degree = norm_angle(next_hp_pos -> degree) ;
+   printf("Here 3\n");
    first_zod = (int) (first_degree / 30);
+   printf("Here 4\n");
    last_zod = (int) (last_degree / 30 );
+   printf("Here 5\n");
    ast_angle_string(first_degree,first_string,'R', indian);
+   printf("Here 6\n");
    ast_angle_string(last_degree,last_string,'R', indian);
+   printf("Here 7\n");
    print_hline(fp);
    fprintf(fp,"{\\bf\\em %d} & %s & %s \\\\\n",h_no,first_string,
            last_string);
+   printf("Here 8\n");
 }
 
 static void lprint_planet(FILE *fp,HP_POS hp_pos, int indian)
@@ -398,6 +407,7 @@ void lprint_hp_pos (FILE *fp,HP_POS hp_pos, int indian)
    {
       if (temp_hp_pos -> hp_type == 'H')
          h_no++;
+      printf(">>>%d, %d\n", i+1000, h_no);
       switch (temp_hp_pos -> hp_type)
       {
         case 'H'   : lprint_house(fp,temp_hp_pos,h_no, indian) ; break ;

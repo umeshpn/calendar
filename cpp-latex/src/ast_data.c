@@ -101,8 +101,74 @@ const char *thithi_name[] = { "VASYA","PRADIPADAM","DWITHEEYA","THRUTHEEYA",
    "CHATHURTHI","PANCHAMI","SHASHTI","SAPTAMI","ASHTAMI","NAVAMI",
    "DASAMI","EKADASI","DWADASI","THRAYODASI","CHATURDASI" };
 
-const char *nak_name[] =
-{
+// const char *thithi_name_2[] = { 
+//   "  AMAVASI",
+//   "S PRADIPADAM",
+//   "S DWITHEEYA",
+//   "S THRUTHEEYA",
+//   "S CHATHURTHI",
+//   "S PANCHAMI",
+//   "S SHASHTI",
+//   "S SAPTAMI",
+//   "S ASHTAMI",
+//   "S NAVAMI",
+//   "S DASAMI",
+//   "S EKADASI",
+//   "S DWADASI",
+//   "S THRAYODASI",
+//   "S CHATURDASI",
+//   "  POURNAMI",
+//   "K PRADIPADAM",
+//   "K DWITHEEYA",
+//   "K THRUTHEEYA",
+//   "K CHATHURTHI",
+//   "K PANCHAMI",
+//   "K SHASHTI",
+//   "K SAPTAMI",
+//   "K ASHTAMI",
+//   "K NAVAMI",
+//   "K DASAMI",
+//   "K EKADASI",
+//   "K DWADASI",
+//   "K THRAYODASI",
+//   "K CHATURDASI"
+// };
+
+const char *thithi_name_2[] = { 
+  "Amavasi",
+  "Prathama",
+  "Dwitheeya",
+  "Thritheeya",
+  "Chathurthi",
+  "Panchami",
+  "Shashti",
+  "Sapthami",
+  "Ashtami",
+  "Navami",
+  "Dhashami",
+  "Ekadhashi",
+  "Dwadhashi",
+  "Threyodhashi",
+  "Chathurdhashi",
+  "Pournami",
+  "Prathama",
+  "Dwitheeya",
+  "Thritheeya",
+  "Chathurthi",
+  "Panchami",
+  "Shashti",
+  "Sapthami",
+  "Ashtami",
+  "Navami",
+  "Dhashami",
+  "Ekadhashi",
+  "Dwadhashi",
+  "Threyodhashi",
+  "Chathurdhashi",
+};
+
+ const char *nak_name[] =
+ {
   "ASWATHI",      "BHARANI",      "KARTHIKA",    "ROHINI",
   "MAKAYIRAM",    "ATHIRA",       "PUNARTAM",    "POOYAM",
   "AYILYAM",      "MAKAM",        "POORAM",      "UTHRAM",
@@ -110,7 +176,18 @@ const char *nak_name[] =
   "ANIZHAM",      "THRIKKETA",    "MOOLAM",      "POORADAM",
   "UTHRADAM",     "THIRUVONAM",   "AVITTAM",     "CHATHAYAM",
   "POORUTTATHI",  "UTHRUTTATHI",  "REVATHI"
-} ;
+};
+
+const char *nak_name_alt[] =
+{
+  "Ashwathi",      "Bharani",      "Karthika",    "Rohini",
+  "Makayiram",    "Thiruvathira",   "Punartham",    "Pooyam",
+  "Aayillyam",      "Makam",        "Pooram",      "Uthram",
+  "Atham",       "Chithira",      "Chothi",      "Vishakham",
+  "Anizham",      "Thrikketta",    "Moolam",      "Pooradam",
+  "Uthradam",     "Thiruvonam",   "Avittam",     "Chathayam",
+  "Pooruruttathi",  "Uthruttathi",  "Revathi"
+};
 
 const char *day_name[] =
 {

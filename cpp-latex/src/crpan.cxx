@@ -374,6 +374,8 @@ static char* get_alt_naks_string(const char* prefix, int nak, double j_day, char
   if (nak < 0) {
     strcpy(naks_str, "  ");
     return naks_str;
+   } else {
+     sprintf(str,  "%s", nak_name_alt[nak]);
   }
   hm_string(j_day, hm_str);
   if (strlen(hm_str) == 6) {
@@ -396,6 +398,8 @@ static char* get_alt_thithis_string(const char* prefix, int thi, double j_day, c
   if (thi < 0) {
     strcpy(thith_str, " ");
     return thith_str;
+   } else {
+     sprintf(t_str, "%s", thithi_name_2[thi]);
   }
   hm_string(j_day, hm_str);
   if (strlen(hm_str) == 6) {
@@ -1980,6 +1984,7 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
     } else {
       get_alt_naks_string(nak_prefix1, (nak+1)%27, -1.0, alt_naks_str);
     }
+  printf("Found alt star 0\n");
 
   }
   printf("Found alt star\n");
@@ -2062,6 +2067,7 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
       tonightsThithi = todaysThithi = (thithi+1)%30;
       get_alt_thithis_string(thi_prefix1, todaysThithi, -1.0, alt_thithi_str);
     }
+    printf("Found alt thithi 0\n");
   }
 
     printf("Found alt thithi\n");

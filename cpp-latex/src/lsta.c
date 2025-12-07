@@ -83,9 +83,13 @@ int main(int argc, char *argv[])
          printf("birth_info.latitude = %f\n",birth_info.latitude);
          printf("birth_info.longitude = %f\n",birth_info.longitude);
          full_details(birth_info.j_date,pl_det);
+         printf("1\n");
          e = find_e_and_ayanamsa(birth_info.j_date);
+         printf("2\n");
          get_house_degrees(e,&birth_info,hs);
+         printf("3\n");
          find_hp_pos(pl_det,hs,hp_pos);
+         printf("4\n");
 
          fprintf(out_fp, "\\documentclass{article}\n");
          fprintf(out_fp, "\\usepackage{float}\n");

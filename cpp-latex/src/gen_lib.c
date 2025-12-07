@@ -214,3 +214,13 @@ void center_it_pw(FILE *fp, const char *any_string, int line_skip, int page_widt
    for ( i = 0  ; i <= line_skip ; i++)
       fputc('\n',fp);
 }
+
+/*
+int sprintf(char* buf, char const *fmt, ...) {
+  va_list args;
+  va_start(args, fmt);
+  int printed = snprintf(buf, 100, fmt, args);
+  va_end(args);
+  return printed;
+}
+*/

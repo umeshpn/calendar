@@ -115,13 +115,15 @@ void get_date_time(double j_day, struct date *dd, struct time *tt)
    j_day += 0.5 ;
    int_part = floor(j_day);
    fr_part = j_day - int_part ;
-   if (int_part > 2299160.0)
-   {
-      a = floor((int_part - 1867216.25)/ 36524.25);
-      b = int_part + 1 + a - floor(a/4.0);
-   }
-   else 
-      b = int_part ;
+   // if (int_part > 2299160.0)
+   // {
+   //    a = floor((int_part - 1867216.25)/ 36524.25);
+   //    b = int_part + 1 + a - floor(a/4.0);
+   // }
+   // else 
+   //    b = int_part ;
+   a = floor((int_part - 1867216.25)/ 36524.25);
+   b = int_part + 1 + a - floor(a/4.0);
    c = b + 1524 ;
    d = floor((c - 122.1)/D_IN_Y);
    e = floor(D_IN_Y * d);

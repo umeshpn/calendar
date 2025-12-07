@@ -934,6 +934,8 @@ private:
   bool is_month_at_sunrise;
   HolidayMap indian_holidays;
   HolidayMap foreign_holidays;
+  map<string, int> holidayCounts; 
+
 
 };
 
@@ -989,10 +991,9 @@ void CalendarCreator::addFixedHoliday(HolidayMap& holidayMap, int year, int mont
 
 
 
-
 void CalendarCreator::addHoliday(HolidayMap& holidayMap, int day_in_year, string name)
 {
-  cout << "Adding " << name << " (" << day_in_year << ") to " << (holidayMap == indian_holidays ? "Indian" : "Foreign") << endl;
+  // cout << "Adding " << name << " (" << day_in_year << ") to " << (holidayMap == indian_holidays ? "Indian" : "Foreign") << endl;
   HolidayMap::iterator it = holidayMap.find(day_in_year);
   if (it == holidayMap.end()) {
     vector<string> v;
@@ -1000,6 +1001,13 @@ void CalendarCreator::addHoliday(HolidayMap& holidayMap, int day_in_year, string
     holidayMap.insert(std::pair<int,vector<string> >(day_in_year, v));
   } else {
     it->second.push_back(name);
+  }
+
+  map<string, int>::const_iterator pos = holidayCounts.find(name);
+  if (pos == holidayCounts.end()) {
+    holidayCounts.insert(std::make_pair(name, 1));
+  } else {
+    ++holidayCounts[name];
   }
 }
 
@@ -1122,9 +1130,9 @@ CalendarCreator::checkIfValid()
     dir = 'N';
     dms_time (latitude, &dms);
   }
+
   sprintf(buf, "$%2d^\\circ{} %2d\'$ %c", dms.degrees, dms.minutes, dir);
   latitudeString = buf;
-
   if (longitude < 0) {
     dir = 'E';
     dms_time (-longitude, &dms);
@@ -1228,8 +1236,15 @@ CalendarCreator::createCalendar(const string& placeId)
     }
   }
 
+  if (!placeFound) {
+    std::cerr << "The place ID " << placeId << " not found!" << std::endl;
+    is.close();
+    assert(false);
+  }
+
  
   if (error || !checkIfValid()) {
+    is.close();
     assert(false);
     // return false;
   }
@@ -1261,6 +1276,14 @@ CalendarCreator::createCalendar(const string& placeId)
 
   this->print_calendar(startJulianDay, nDays, shortStdTZ.c_str(), latitude, longitude) ;
   if (outFp) fclose (outFp) ;
+
+  printf("\nHoliday counts:\n");
+  for (map<string, int>::iterator it = holidayCounts.begin(); it != holidayCounts.end(); ++it) {
+    printf("%2d %s\n", it->second, it->first.c_str(), it->second);
+    if (it->second > 1) {
+       printf("Holiday ERROR: %s has %d occurrences!\n", it->first.c_str(), it->second);
+    }
+  }
   return true;
 }
 
@@ -1685,19 +1708,13 @@ void CalendarCreator::print_month_tail(int curr_year, int curr_month, const char
 
     if (dst) {
       if (curr_month == std2dstMonth) {
-        bottom_line += longDstTZ;
-        bottom_line += " from ";
-        bottom_line += dstStart;
-        bottom_line += "; ";
         bottom_line += longStdTZ;
-        bottom_line += " before that";
+        bottom_line += "/";
+        bottom_line += longDstTZ;
       } else if  (curr_month == dst2stdMonth){
-        bottom_line += longStdTZ;
-        bottom_line += " from ";
-        bottom_line += dstEnd;
-        bottom_line += "; ";
         bottom_line += longDstTZ;
-        bottom_line += " before that";
+        bottom_line += "/";
+        bottom_line += longStdTZ;
       } else {
         if (northernHemisphere) {
           if (curr_month > std2dstMonth && curr_month < dst2stdMonth) {
@@ -1730,7 +1747,9 @@ void CalendarCreator::print_month_tail(int curr_year, int curr_month, const char
     // bottom_line += ", ";
     // bottom_line += longitudeString;
     // bottom_line += ").";
-    bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}. Photos by \\textsf{Manjith Kainickara}.";
+    // bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}.  All photos are from Wikimedia Commons.";
+    bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}.";
+    // bottom_line += ". Prepared by \\textsf{Umesh P. Narendran}.Photos by \\textsf{Manjith Kainickara}.";
 
 
     fprintf(outFp, "\\node at (%6.2f, %6.2f) {%s};", 0.5 * (min_x + max_x), -1.0, bottom_line.c_str());
@@ -1945,10 +1964,10 @@ void CalendarCreator::add_fixed_holidays (int year) {
   }
 
   if (forBoney) {
-    addFixedHoliday(indian_holidays, year, 3, 22, "റമദാൻ ആരംഭം");
-    addFixedHoliday(indian_holidays, year, 3, 8, "ഹോളി");
-    addFixedHoliday(indian_holidays, year, 4, 22, "ഈദ് അൽ ഫിത്തർ");
-    addFixedHoliday(indian_holidays, year, 6, 29, "ബക്രീഡ്");
+    addFixedHoliday(indian_holidays, year, 2, 28, "റമദാൻ ആരംഭം");
+    addFixedHoliday(indian_holidays, year, 3, 14, "ഹോളി");
+    addFixedHoliday(indian_holidays, year, 3, 30, "ഈദ് അൽ ഫിത്തർ");
+    addFixedHoliday(indian_holidays, year, 6, 6, "ബക്രീഡ്");
   }
 
   if (forSandhya) {
@@ -2084,7 +2103,6 @@ void CalendarCreator::print_holidays_during(int start, int end, int wd)
         vector<string>::iterator it =  indian->second.begin();
         while (it != indian->second.end()) {
           y -= 0.4;
-          cout << "Displaying " << *it << endl;
           fprintf(outFp, "\\node at (%6.1f, %6.1f)  {{\\fontsize{%d}{0}\\selectfont {\\color{MalHolidayColor}\\MalFont \\textbf{%s}}}};\n",
                   row_mid, y, holidaySize, it->c_str());
           ++it;
@@ -2094,7 +2112,6 @@ void CalendarCreator::print_holidays_during(int start, int end, int wd)
         vector<string>::iterator it =  foreign->second.begin();
         while (it != foreign->second.end()) {
           y -= 0.4;
-          cout << "Displaying " << *it << endl;
           fprintf(outFp, "\\node at (%6.1f, %6.1f)  {{\\fontsize{%d}{0}\\selectfont {\\color{EngHolidayColor} \\textbf{%s}}}};\n",
                   row_mid, y, holidaySize, it->c_str());
           ++it;
@@ -2351,8 +2368,8 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
       get_thithis_string(-1, -1.0, 0, thithi_str1);
     }
   } else {
-    tonightsThithi = todaysThithi = thithi;
-    get_thithis_string(thithi, -1.0, 1, thithi_str);
+    tonightsThithi = todaysThithi = ithithi(udayam);
+    get_thithis_string(todaysThithi, -1.0, 1, thithi_str);
   }
 
 
@@ -2360,7 +2377,6 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
   hm_string(localJulianDay(astamayam), astamayam_str);
 
   int d1 = get_year_day_of_date(curr_date);
-  // printf("%d %d\n", d1, this->nextNewMonthDay);
   if (get_year_day_of_date(curr_date) == this->nextNewMonthDay) {
     // New Malayalam month
     malDay = 1;
@@ -2398,17 +2414,40 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
   if (todaysThithi > 10) {
     inNavaratri = false;
   }
-   
+
   if (malMonth == 4 /* CHINGAM */ && todaysStar == 21 /* THIRUVONAM */ ) {
-    thiruvonamDay = curr_day_number;
-    gregDateColor = KERALA_HOLIDAY_COLOR;
-    addHoliday(indian_holidays, curr_day_number, "തിരുവോണം");
+    if (malDay < 7) {
+      double transit_day;
+      sun_transit_between(j_day, j_day+35, &transit_day);
+      int star = inakshatram(transit_day);
+
+      if (star <= 21) {
+        thiruvonamDay = curr_day_number;
+        gregDateColor = KERALA_HOLIDAY_COLOR;
+        addHoliday(indian_holidays, curr_day_number, "തിരുവോണം");
+      }
+    } else {
+      thiruvonamDay = curr_day_number;
+      gregDateColor = KERALA_HOLIDAY_COLOR;
+      addHoliday(indian_holidays, curr_day_number, "തിരുവോണം");
+    }
   } else if (malMonth == 4 /* CHINGAM */ && (todaysStar == 22 && yesterdaysStar == 20)) {
-    fprintf(stderr, "============= %d ===================\n", curr_date.da_year);
-    thiruvonamDay = curr_day_number - 1;
-    addHoliday(indian_holidays, curr_day_number-1, "തിരുവോണം");
+    if (malDay < 8) {
+      double transit_day;
+      sun_transit_between(j_day, j_day+34, &transit_day);
+      int star = inakshatram(transit_day);
+
+      if (star <= 21) {
+        thiruvonamDay = curr_day_number - 1;
+        gregDateColor = KERALA_HOLIDAY_COLOR;
+        addHoliday(indian_holidays, curr_day_number-1, "തിരുവോണം");
+      }
+    } else {
+      thiruvonamDay = curr_day_number - 1;
+      addHoliday(indian_holidays, curr_day_number-1, "തിരുവോണം");
+    }
   }
-   
+
   if (malMonth == 0 /* MEDAM */ && malDay == 1) {
     if (is_month_at_sunrise) {
       vishuDay = curr_day_number;
@@ -2472,11 +2511,13 @@ void CalendarCreator::print_details(double j_day, struct date& curr_date, ST_PL_
   } 
 
 
-  if (malMonth == 6 /* THULAM */ && todaysThithi == 29) {
-    deepavaliDay = curr_day_number;
+  if (malMonth == 6 /* THULAM */ ) {
+    if (todaysThithi == 29) {
+      deepavaliDay = curr_day_number;
       addHoliday(indian_holidays, curr_day_number, "ദീപാവലി");
-  } else if ((malMonth == 6) && (todaysThithi == 0 && yesterdaysThithi == 28)){
+    } else if ((todaysThithi == 0 && yesterdaysThithi == 28)){
       addHoliday(indian_holidays, curr_day_number-1, "ദീപാവലി");
+    }
   }
 
   if (curr_day_number == easterYearDay) {
@@ -2770,7 +2811,6 @@ double MatchFinder::findNextMatch(int val, double start_j_day, double end_j_day)
       break;
     }
     new_val = matchFunction(j_day);
-    // printf("j_day = %lf, new_val = %d\n", j_day, new_val);
   } while (new_val == val);
 
   if (eod) {
@@ -2794,14 +2834,12 @@ double MatchFinder::findNextMatch(int val, double start_j_day, double end_j_day)
   while (high - low > 1.0/1440.0) {
     mid = 0.5 * (high + low);
     mid_val = matchFunction(mid);
-    // printf("High = %lf, Low = %lf, Mid = %lf, Mid Val = %d\n", high, low, mid, mid_val);
     if (mid_val == val) {
       low = mid;
     } else {
       high = mid;
     }
   }
-  // printf ("BORDER = %lf\n", low);
   return low;
 }
 
